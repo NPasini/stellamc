@@ -35,7 +35,7 @@
 		A8646CE1260DF37300604FE0 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8646CE0260DF37300604FE0 /* NetworkError.swift */; };
 		A8646CEA260DF3D400604FE0 /* SceneDelegate+UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8646CE9260DF3D400604FE0 /* SceneDelegate+UITests.swift */; };
 		A8646D23260DF7C500604FE0 /* DepartmentProductsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8646D22260DF7C500604FE0 /* DepartmentProductsRequest.swift */; };
-		A8646D34260DFAE600604FE0 /* DepartmentProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8646D33260DFAE600604FE0 /* DepartmentProduct.swift */; };
+		A8646D34260DFAE600604FE0 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8646D33260DFAE600604FE0 /* Product.swift */; };
 		A8646D44260DFB8D00604FE0 /* DepartmentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8646D43260DFB8D00604FE0 /* DepartmentResponse.swift */; };
 		A8646D5F260DFFF500604FE0 /* NavigationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8646D5E260DFFF500604FE0 /* NavigationService.swift */; };
 		A8646D64260E002400604FE0 /* NetworkMonitorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8646D63260E002400604FE0 /* NetworkMonitorService.swift */; };
@@ -115,7 +115,7 @@
 		A8646CE0260DF37300604FE0 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		A8646CE9260DF3D400604FE0 /* SceneDelegate+UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SceneDelegate+UITests.swift"; sourceTree = "<group>"; };
 		A8646D22260DF7C500604FE0 /* DepartmentProductsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentProductsRequest.swift; sourceTree = "<group>"; };
-		A8646D33260DFAE600604FE0 /* DepartmentProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentProduct.swift; sourceTree = "<group>"; };
+		A8646D33260DFAE600604FE0 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		A8646D43260DFB8D00604FE0 /* DepartmentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentResponse.swift; sourceTree = "<group>"; };
 		A8646D5E260DFFF500604FE0 /* NavigationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationService.swift; sourceTree = "<group>"; };
 		A8646D63260E002400604FE0 /* NetworkMonitorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitorService.swift; sourceTree = "<group>"; };
@@ -401,7 +401,7 @@
 			isa = PBXGroup;
 			children = (
 				A8646D85260E0B1400604FE0 /* Department.swift */,
-				A8646D33260DFAE600604FE0 /* DepartmentProduct.swift */,
+				A8646D33260DFAE600604FE0 /* Product.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -788,7 +788,7 @@
 				A8646D44260DFB8D00604FE0 /* DepartmentResponse.swift in Sources */,
 				A8646CD1260DF30300604FE0 /* Colors.swift in Sources */,
 				A8646CAD260DF26500604FE0 /* BaseViewController.swift in Sources */,
-				A8646D34260DFAE600604FE0 /* DepartmentProduct.swift in Sources */,
+				A8646D34260DFAE600604FE0 /* Product.swift in Sources */,
 				A8646E20260E757900604FE0 /* DepartmentResults.swift in Sources */,
 				A8646CC2260DF2C500604FE0 /* UITableViewCell+Extensions.swift in Sources */,
 				A8646DE1260E503D00604FE0 /* RepositoriesAssembly.swift in Sources */,
