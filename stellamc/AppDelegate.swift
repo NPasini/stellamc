@@ -45,7 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //            }
         } else {
             assemblies.append(AppServicesAssembly())
-//            assemblies.append(RepositoriesAssembly())
+            assemblies.append(RepositoriesAssembly())
         }
 
         AssemblerWrapper.shared.register(assemblies: assemblies)

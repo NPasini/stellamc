@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Department {
+enum Department: String {
     case beauty
     case lingerie
     case accessories
@@ -36,6 +36,32 @@ enum Department {
             return "accessories"
         case .readyToWear:
             return "dress"
+        }
+    }
+
+    var pathName: String {
+        switch self {
+        case .beauty:
+            return "Main_Beauty"
+        case .lingerie:
+            return "Main_Lingerie"
+        case .accessories:
+            return "Main_Accessories_All"
+        case .readyToWear:
+            return "Main_Ready_To_Wear"
+        }
+    }
+
+    var gender: String? {
+        switch self {
+        case .beauty:
+            return "D"
+        case .accessories:
+            return "D"
+        case .readyToWear:
+            return "D"
+        default:
+            return nil
         }
     }
 }

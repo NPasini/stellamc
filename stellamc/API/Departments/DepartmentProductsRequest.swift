@@ -1,5 +1,5 @@
 //
-//  BaseDepartmentRequest.swift
+//  DepartmentProductsRequest.swift
 //  stellamc
 //
 //  Created by Nicolò Pasini on 26/03/21.
@@ -9,7 +9,7 @@ import OSLogger
 import Foundation
 import NetworkManager
 
-class BaseDepartmentRequest: GetRequest<DepartmentResponse> {
+class DepartmentProductsRequest: GetRequest<DepartmentResponse> {
     let aveKey: String = "ave"
     let pageKey: String = "page"
     let genderKey: String = "gender"
