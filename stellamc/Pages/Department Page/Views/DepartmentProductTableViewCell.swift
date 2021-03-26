@@ -18,6 +18,7 @@ class DepartmentProductTableViewCell: UITableViewCell {
         super.awakeFromNib()
 
         price.textColor = UIColor.lightText
+        productImage.layer.cornerRadius = 20
     }
 
     override func prepareForReuse() {
@@ -30,14 +31,14 @@ class DepartmentProductTableViewCell: UITableViewCell {
         price.text = "\(product.price) €"
         productName.text = product.name
 
-//        if let urlString = gazer.avatarUrl, let imageURL = URL(string: urlString) {
-//            avatarImage.sd_setImage(with: imageURL) { [weak self] (image: UIImage?, error: Error?, cacheType: SDImageCacheType, imageURL: URL?) in
-//                guard error == nil else { return }
-//
-//                self?.avatarImage.image = image
-//            }
-//        } else {
-//            avatarImage.image = UIImage()
-//        }
+        if let imageURL = URL(string: product.thumbURLString) {
+            productImage.sd_setImage(with: imageURL) { [weak self] (image: UIImage?, error: Error?, cacheType: SDImageCacheType, imageURL: URL?) in
+                guard error == nil else { return }
+
+                self?.productImage.image = image
+            }
+        } else {
+            productImage.image = UIImage()
+        }
     }
 }

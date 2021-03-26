@@ -90,7 +90,7 @@ class DepartmentViewController: BaseViewController {
             spinnerView.centerYAnchor.constraint(equalTo: footerView.centerYAnchor)
         ])
 
-        tableView.rowHeight = 80
+        tableView.rowHeight = 150
         tableView.backgroundColor = .clear
         tableView.tableFooterView = footerView
         tableView.register(viewType: DepartmentProductTableViewCell.self)
