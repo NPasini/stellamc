@@ -1,5 +1,5 @@
 //
-//  BeautyRequest.swift
+//  Product.swift
 //  stellamc
 //
 //  Created by Nicolò Pasini on 26/03/21.
