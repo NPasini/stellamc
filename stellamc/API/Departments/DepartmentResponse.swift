@@ -19,7 +19,7 @@ extension DepartmentResponse: CustomDecodable {
 
         if let productsList = products {
             OSLogger.networkLog(message: "Department response contains \(productsList.count) objects", access: .public, type: .debug)
-            return ReadyToWearResponse(products: productsList)
+            return DepartmentResponse(products: productsList)
         } else {
             OSLogger.networkLog(message: "Decoding of Department Response was not successful", access: .public, type: .debug)
             return nil
