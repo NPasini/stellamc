@@ -21,6 +21,10 @@ class DepartmentProductTableViewCell: UITableViewCell {
         productImage.layer.cornerRadius = 20
     }
 
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(false, animated: false)
+    }
+
     override func prepareForReuse() {
         price.text = ""
         productName.text = ""

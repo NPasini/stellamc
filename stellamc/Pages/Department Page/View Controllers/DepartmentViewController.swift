@@ -21,6 +21,8 @@ class DepartmentViewController: BaseViewController {
     private let animationDuration: TimeInterval = 0.3
     private var isNetworkConnectionAvailable: Bool = true
     private(set) var compositeDisposable = CompositeDisposable()
+
+    private let navigationService: NavigationService? = AssemblerWrapper.shared.resolve(NavigationService.self)
     private var networkMonitorService: NetworkMonitorService? = AssemblerWrapper.shared.resolve(NetworkMonitorService.self)
 
     var departmentViewModel: DepartmentViewModel {
@@ -175,6 +177,9 @@ extension DepartmentViewController: UITableViewDataSource {
 }
 
 extension DepartmentViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        navigationService?.push(page: .pdp, with: nil, using: navigationController, animated: true)
+    }
 }
 
 extension DepartmentViewController: UITableViewDataSourcePrefetching {
