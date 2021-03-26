@@ -47,7 +47,7 @@ class DepartmentSelectorViewController: BaseViewController {
     }
 
     private func navigateToDepartmentPage(_ department: Department) {
-        let departmentViewModel: ViewModel? = nil
+        let departmentViewModel = DepartmentViewModel(department: department)
         navigationService?.push(page: .department, with: departmentViewModel, using: navigationController, animated: true)
     }
 }
