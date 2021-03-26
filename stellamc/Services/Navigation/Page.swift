@@ -19,24 +19,28 @@ enum Page {
         }
     }
 
-//    var identifier: String {
-//        switch self {
-//        case .starGazerList:
-//            return StarGazersListViewController.identifier
-//        case .repositorySelector:
-//            return RepositorySelectorViewController.identifier
-//        }
-//    }
+    var identifier: String {
+        switch self {
+        case .pdp:
+            return PDPViewController.identifier
+        case .department:
+            return DepartmentViewController.identifier
+        case .departmentSelector:
+            return DepartmentSelectorViewController.identifier
+        }
+    }
 
-//    func getViewController(coder: NSCoder, viewModel: ViewModel?) -> BaseViewController? {
-//        guard let vm = viewModel else { return nil }
-//
-//        switch self {
-//        case .starGazerList:
-//            return StarGazersListViewController(coder: coder, viewModel: vm)
-//        case .repositorySelector:
-//            return RepositorySelectorViewController(coder: coder, viewModel: vm)
-//        }
-//    }
+    func getViewController(coder: NSCoder, viewModel: ViewModel?) -> BaseViewController? {
+        guard let vm = viewModel else { return nil }
+
+        switch self {
+        case .pdp:
+            return PDPViewController(coder: coder, viewModel: vm)
+        case .department:
+            return DepartmentViewController(coder: coder, viewModel: vm)
+        case .departmentSelector:
+            return DepartmentSelectorViewController(coder: coder, viewModel: vm)
+        }
+    }
 }
 

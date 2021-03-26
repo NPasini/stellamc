@@ -45,6 +45,9 @@
 		A8646D44260DFB8D00604FE0 /* DepartmentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8646D43260DFB8D00604FE0 /* DepartmentResponse.swift */; };
 		A8646D5F260DFFF500604FE0 /* NavigationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8646D5E260DFFF500604FE0 /* NavigationService.swift */; };
 		A8646D64260E002400604FE0 /* NetworkMonitorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8646D63260E002400604FE0 /* NetworkMonitorService.swift */; };
+		A8646D6C260E006700604FE0 /* DepartmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8646D6B260E006700604FE0 /* DepartmentViewController.swift */; };
+		A8646D71260E008A00604FE0 /* DepartmentSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8646D70260E008A00604FE0 /* DepartmentSelectorViewController.swift */; };
+		A8646D76260E009700604FE0 /* PDPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8646D75260E009700604FE0 /* PDPViewController.swift */; };
 		ADEAAE445298F5B2021727A2 /* Pods_stellamc_stellamcUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FE8A42731BB28830520A70 /* Pods_stellamc_stellamcUITests.framework */; };
 		D2B9393E55061C8E856DF8E5 /* Pods_stellamc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C4586004247617B42D96F4D /* Pods_stellamc.framework */; };
 		F70F437295B3D7B4F2DE6EC6 /* Pods_stellamcTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F66F76C6DEB1DDE6A6BA5D /* Pods_stellamcTests.framework */; };
@@ -113,6 +116,9 @@
 		A8646D43260DFB8D00604FE0 /* DepartmentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentResponse.swift; sourceTree = "<group>"; };
 		A8646D5E260DFFF500604FE0 /* NavigationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationService.swift; sourceTree = "<group>"; };
 		A8646D63260E002400604FE0 /* NetworkMonitorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitorService.swift; sourceTree = "<group>"; };
+		A8646D6B260E006700604FE0 /* DepartmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentViewController.swift; sourceTree = "<group>"; };
+		A8646D70260E008A00604FE0 /* DepartmentSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentSelectorViewController.swift; sourceTree = "<group>"; };
+		A8646D75260E009700604FE0 /* PDPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDPViewController.swift; sourceTree = "<group>"; };
 		A9A06539494D265031B76261 /* Pods-stellamc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stellamc.debug.xcconfig"; path = "Target Support Files/Pods-stellamc/Pods-stellamc.debug.xcconfig"; sourceTree = "<group>"; };
 		B1F66F76C6DEB1DDE6A6BA5D /* Pods_stellamcTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stellamcTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -332,6 +338,7 @@
 		A8646CE5260DF38500604FE0 /* Department Selector Page */ = {
 			isa = PBXGroup;
 			children = (
+				A8646D70260E008A00604FE0 /* DepartmentSelectorViewController.swift */,
 			);
 			path = "Department Selector Page";
 			sourceTree = "<group>";
@@ -339,6 +346,7 @@
 		A8646CE6260DF39C00604FE0 /* Department Page */ = {
 			isa = PBXGroup;
 			children = (
+				A8646D6B260E006700604FE0 /* DepartmentViewController.swift */,
 			);
 			path = "Department Page";
 			sourceTree = "<group>";
@@ -346,6 +354,7 @@
 		A8646CE7260DF3A400604FE0 /* Product Detail Page */ = {
 			isa = PBXGroup;
 			children = (
+				A8646D75260E009700604FE0 /* PDPViewController.swift */,
 			);
 			path = "Product Detail Page";
 			sourceTree = "<group>";
@@ -620,9 +629,11 @@
 				A8646CBD260DF2B400604FE0 /* UITableView+Extensions.swift in Sources */,
 				A8646CE1260DF37300604FE0 /* NetworkError.swift in Sources */,
 				A8646D16260DF5C700604FE0 /* ReadyToWearRequest.swift in Sources */,
+				A8646D6C260E006700604FE0 /* DepartmentViewController.swift in Sources */,
 				A8646CB7260DF28000604FE0 /* TypeAliases.swift in Sources */,
 				A8646CEA260DF3D400604FE0 /* SceneDelegate+UITests.swift in Sources */,
 				A8646D23260DF7C500604FE0 /* BaseDepartmentRequest.swift in Sources */,
+				A8646D71260E008A00604FE0 /* DepartmentSelectorViewController.swift in Sources */,
 				A8646CDC260DF35700604FE0 /* AppError.swift in Sources */,
 				A8646C48260DEE9C00604FE0 /* AppDelegate.swift in Sources */,
 				A8646C4A260DEE9C00604FE0 /* SceneDelegate.swift in Sources */,
@@ -633,6 +644,7 @@
 				A8646CA1260DF1EB00604FE0 /* Navigation.swift in Sources */,
 				A8646CA6260DF1FB00604FE0 /* Page.swift in Sources */,
 				A8646D64260E002400604FE0 /* NetworkMonitorService.swift in Sources */,
+				A8646D76260E009700604FE0 /* PDPViewController.swift in Sources */,
 				A8646CF3260DF58C00604FE0 /* BeautyRequest.swift in Sources */,
 				A8646D44260DFB8D00604FE0 /* DepartmentResponse.swift in Sources */,
 				A8646D0C260DF5B100604FE0 /* MainAccessoriesRequest.swift in Sources */,
