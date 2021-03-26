@@ -28,7 +28,7 @@ class BaseDepartmentRequest: GetRequest<DepartmentResponse> {
             queryParameters[genderKey] = choosenGender
         }
 
-        super.init(host: host, path: path, queryParameters: queryParameters)
+        super.init(host: host, path: path, isHttp: true, queryParameters: queryParameters)
     }
 
     override func validateResponse(_ response: URLResponse) -> NSError? {
