@@ -9,11 +9,11 @@ import Foundation
 import ReactiveSwift
 
 protocol DepartmentProductsRepositoryService {
-    func getProducts(page: Int) -> SignalProducer<[DepartmentProduct], NSError>
+    func getProducts(page: Int) -> SignalProducer<[Product], NSError>
 }
 
 extension DepartmentProductsRepositoryService {
-    func getProducts(page: Int = 1) -> SignalProducer<[DepartmentProduct], NSError> {
+    func getProducts(page: Int = 1) -> SignalProducer<[Product], NSError> {
         getProducts(page: 1)
     }
 }

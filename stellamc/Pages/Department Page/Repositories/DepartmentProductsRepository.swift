@@ -12,18 +12,20 @@ import NetworkManager
 
 class DepartmentProductsRepository: DepartmentProductsRepositoryService {
 
+    let perPageItems: Int
     let department: Department
 
-    init(department: Department) {
+    init(department: Department, perPageItems: Int = 50) {
         self.department = department
+        self.perPageItems = perPageItems
     }
 
-    func getProducts(page: Int) -> SignalProducer<[DepartmentProduct], NSError> {
-        let request = DepartmentProductsRequest(department: department.pathName, gender: department.gender, page: page, perPageItems: 50)
+    func getProducts(page: Int) -> SignalProducer<[Product], NSError> {
+        let request = DepartmentProductsRequest(department: department.pathName, gender: department.gender, page: page, perPageItems: perPageItems)
         return observableForGetGazers(request)
     }
 
-    private func observableForGetGazers(_ request: DepartmentProductsRequest) -> SignalProducer<[DepartmentProduct], NSError> {
+    private func observableForGetGazers(_ request: DepartmentProductsRequest) -> SignalProducer<[Product], NSError> {
         return SignalProducer {
             (observer, lifetime) in
 
