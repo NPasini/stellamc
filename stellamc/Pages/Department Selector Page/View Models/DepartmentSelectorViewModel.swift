@@ -14,12 +14,4 @@ struct DepartmentSelectorViewModel: ViewModel {
     init() {
         departments = [.beauty, .accessories, .lingerie, .readyToWear]
     }
-
-    func isValid() -> Bool {
-        return true
-    }
-
-    func errorMessage() -> String {
-        return ""
-    }
 }

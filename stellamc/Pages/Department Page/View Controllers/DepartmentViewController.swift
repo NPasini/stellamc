@@ -54,8 +54,8 @@ class DepartmentViewController: BaseViewController {
             }
         })
 
-        compositeDisposable += departmentViewModel.errorSignal.producer.filter({ $0 == true }).observe(on: UIScheduler()).on(value: { [weak self] _ in
-            self?.showAlert(title: "Error", message: self?.viewModel.errorMessage() ?? "")
+        compositeDisposable += departmentViewModel.errorSignal.producer.filter({ !$0.isEmpty }).observe(on: UIScheduler()).on(value: { [weak self] (errorMessage: String) in
+            self?.showAlert(title: "Error", message: errorMessage)
         }).start()
     }
 
@@ -97,7 +97,7 @@ class DepartmentViewController: BaseViewController {
         tableView.tableFooterView = footerView
         tableView.register(viewType: DepartmentProductTableViewCell.self)
 
-        compositeDisposable += tableView.reactive.reloadData <~ departmentViewModel.gazersDataSource.signal.map({ [weak self] (gazers: [Product]) in
+        compositeDisposable += tableView.reactive.reloadData <~ departmentViewModel.productsDataSource.signal.map({ [weak self] (gazers: [Product]) in
             OSLogger.uiLog(message: "Reloading TableView", access: .public, type: .debug)
             if gazers.count == 0, let isConnectionAvailable = self?.isNetworkConnectionAvailable, isConnectionAvailable {
                 DispatchQueue.main.async {
@@ -160,11 +160,11 @@ class DepartmentViewController: BaseViewController {
 
 extension DepartmentViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return departmentViewModel.gazersDataSource.value.count
+        return departmentViewModel.productsDataSource.value.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cellModel = departmentViewModel.gazersDataSource.value[indexPath.row]
+        let cellModel = departmentViewModel.productsDataSource.value[indexPath.row]
 
         if let cell = tableView.dequeueReusableCell(withIdentifier: DepartmentProductTableViewCell.identifier, for: indexPath) as? DepartmentProductTableViewCell {
             cell.configure(with: cellModel)
@@ -178,13 +178,14 @@ extension DepartmentViewController: UITableViewDataSource {
 
 extension DepartmentViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        navigationService?.push(page: .pdp, with: nil, using: navigationController, animated: true)
+        let viewModel = PDPViewModel(product: departmentViewModel.productsDataSource.value[indexPath.row])
+        navigationService?.push(page: .pdp, with: viewModel, using: navigationController, animated: true)
     }
 }
 
 extension DepartmentViewController: UITableViewDataSourcePrefetching {
     private func isLoadingCell(at indexPath: IndexPath) -> Bool {
-        return indexPath.row >= (departmentViewModel.gazersDataSource.value.count - 1)
+        return indexPath.row >= (departmentViewModel.productsDataSource.value.count - 1)
     }
 
     func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
