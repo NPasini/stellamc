@@ -10,16 +10,17 @@ import Foundation
 import NetworkManager
 
 struct DepartmentResponse {
-    let products: [DepartmentProduct]
+    let products: [Product]
 }
 
 extension DepartmentResponse: CustomDecodable {
     static func decode(_ data: Data) -> CustomDecodable? {
-        let products = try? JSONDecoder().decode([DepartmentProduct].self, from: data)
+        let productResponse = try? JSONDecoder().decode(DepartmentResults.self, from: data)
 
-        if let productsList = products {
-            OSLogger.networkLog(message: "Department response contains \(productsList.count) objects", access: .public, type: .debug)
-            return DepartmentResponse(products: productsList)
+        if let response = productResponse {
+            let products = response.departmentProducts.products
+            OSLogger.networkLog(message: "Department response contains \(products.count) objects", access: .public, type: .debug)
+            return DepartmentResponse(products: products)
         } else {
             OSLogger.networkLog(message: "Decoding of Department Response was not successful", access: .public, type: .debug)
             return nil
