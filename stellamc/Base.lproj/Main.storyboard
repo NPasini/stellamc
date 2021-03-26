@@ -6,6 +6,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -55,6 +56,61 @@
             </objects>
             <point key="canvasLocation" x="-88.405797101449281" y="93.75"/>
         </scene>
+        <!--Department View Controller-->
+        <scene sceneID="Ltv-Bi-e7q">
+            <objects>
+                <viewController storyboardIdentifier="DepartmentViewController" id="PmJ-BL-sDh" customClass="DepartmentViewController" customModule="stellamc" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SXf-JD-lWV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bKU-Bi-Rwp">
+                                <rect key="frame" x="0.0" y="44" width="414" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error Message" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsh-ES-hRz">
+                                        <rect key="frame" x="15" y="10" width="384" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstItem="vsh-ES-hRz" firstAttribute="leading" secondItem="bKU-Bi-Rwp" secondAttribute="leading" constant="15" id="GPR-si-kIv"/>
+                                    <constraint firstAttribute="height" constant="40" id="dkm-0g-ddR"/>
+                                    <constraint firstItem="vsh-ES-hRz" firstAttribute="centerY" secondItem="bKU-Bi-Rwp" secondAttribute="centerY" id="fWT-ua-qNe"/>
+                                    <constraint firstAttribute="trailing" secondItem="vsh-ES-hRz" secondAttribute="trailing" constant="15" id="npU-sF-CWm"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Cp3-ZW-u6C">
+                                <rect key="frame" x="0.0" y="84" width="414" height="778"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bRi-2h-CfZ"/>
+                        <color key="backgroundColor" name="BackLightGrey"/>
+                        <constraints>
+                            <constraint firstItem="bRi-2h-CfZ" firstAttribute="trailing" secondItem="Cp3-ZW-u6C" secondAttribute="trailing" id="4Ct-3p-gXz"/>
+                            <constraint firstItem="bKU-Bi-Rwp" firstAttribute="leading" secondItem="bRi-2h-CfZ" secondAttribute="leading" id="OPu-lG-XmQ"/>
+                            <constraint firstItem="Cp3-ZW-u6C" firstAttribute="top" secondItem="bKU-Bi-Rwp" secondAttribute="bottom" id="QKB-Pn-gzK"/>
+                            <constraint firstItem="bKU-Bi-Rwp" firstAttribute="top" secondItem="bRi-2h-CfZ" secondAttribute="top" id="aro-28-3KO"/>
+                            <constraint firstItem="bRi-2h-CfZ" firstAttribute="bottom" secondItem="Cp3-ZW-u6C" secondAttribute="bottom" id="kZV-3w-8ME"/>
+                            <constraint firstItem="bRi-2h-CfZ" firstAttribute="trailing" secondItem="bKU-Bi-Rwp" secondAttribute="trailing" id="ni0-QH-kCm"/>
+                            <constraint firstItem="Cp3-ZW-u6C" firstAttribute="leading" secondItem="bRi-2h-CfZ" secondAttribute="leading" id="v2a-NE-dbV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="messageLabel" destination="vsh-ES-hRz" id="EVZ-3N-fUv"/>
+                        <outlet property="messageView" destination="bKU-Bi-Rwp" id="BQY-iL-sc5"/>
+                        <outlet property="messageViewHeightConstraint" destination="dkm-0g-ddR" id="obQ-t1-uVa"/>
+                        <outlet property="tableView" destination="Cp3-ZW-u6C" id="Qm1-Th-TZU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="acN-Af-rQv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="779.71014492753625" y="93.75"/>
+        </scene>
     </scenes>
     <resources>
         <namedColor name="BackLightGrey">
@@ -63,5 +119,8 @@
         <namedColor name="FrontOrange">
             <color red="0.99599999189376831" green="0.68199998140335083" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

@@ -9,11 +9,11 @@ import OSLogger
 import Foundation
 import ReactiveSwift
 
-final class DepartmentViewModel {
+final class DepartmentViewModel: ViewModel {
 
     let errorSignal: Property<Bool>
     let stopFetchingData: Property<Bool>
-    let gazersDataSource: MutableProperty<[DepartmentProduct]>
+    let gazersDataSource: MutableProperty<[Product]>
 
     private var currentPage: Int
     private var isFetching: Bool
@@ -71,7 +71,7 @@ final class DepartmentViewModel {
                 }, completed: { [weak self] in
                     self?.currentPage += 1
                     self?.isFetching = false
-                }, value: { [weak self] (newProducts: [DepartmentProduct]) in
+                }, value: { [weak self] (newProducts: [Product]) in
                     if let perPageCount = self?.itemsPerPage {
                         let endOfFetchingReachedValue = (newProducts.count < perPageCount || newProducts.count == 0) ? true : false
                         self?.stopFetchingPipe.input.send(value: endOfFetchingReachedValue)
