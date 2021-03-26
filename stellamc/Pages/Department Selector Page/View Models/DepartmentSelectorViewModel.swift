@@ -6,3 +6,20 @@
 //
 
 import Foundation
+
+struct DepartmentSelectorViewModel: ViewModel {
+
+    let departments: [Department]
+
+    init() {
+        departments = [.beauty, .accessories, .lingerie, .readyToWear]
+    }
+
+    func isValid() -> Bool {
+        return true
+    }
+
+    func errorMessage() -> String {
+        return ""
+    }
+}

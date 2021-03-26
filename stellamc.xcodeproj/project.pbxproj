@@ -50,6 +50,11 @@
 		A8646D76260E009700604FE0 /* PDPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8646D75260E009700604FE0 /* PDPViewController.swift */; };
 		A8646D7E260E0AF300604FE0 /* DepartmentSelectorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8646D7D260E0AF300604FE0 /* DepartmentSelectorViewModel.swift */; };
 		A8646D86260E0B1400604FE0 /* Department.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8646D85260E0B1400604FE0 /* Department.swift */; };
+		A8646D99260E101000604FE0 /* AppServicesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8646D98260E101000604FE0 /* AppServicesAssembly.swift */; };
+		A8646D9F260E109900604FE0 /* DepartmentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8646D9E260E109900604FE0 /* DepartmentCollectionViewCell.swift */; };
+		A8646DA5260E10AD00604FE0 /* DepartmentCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8646DA4260E10AD00604FE0 /* DepartmentCollectionViewCell.xib */; };
+		A8646DB0260E144100604FE0 /* UICollectionViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8646DAF260E144100604FE0 /* UICollectionViewCell+Extensions.swift */; };
+		A8646DB5260E145F00604FE0 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8646DB4260E145F00604FE0 /* UICollectionView+Extensions.swift */; };
 		ADEAAE445298F5B2021727A2 /* Pods_stellamc_stellamcUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FE8A42731BB28830520A70 /* Pods_stellamc_stellamcUITests.framework */; };
 		D2B9393E55061C8E856DF8E5 /* Pods_stellamc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C4586004247617B42D96F4D /* Pods_stellamc.framework */; };
 		F70F437295B3D7B4F2DE6EC6 /* Pods_stellamcTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F66F76C6DEB1DDE6A6BA5D /* Pods_stellamcTests.framework */; };
@@ -123,6 +128,11 @@
 		A8646D75260E009700604FE0 /* PDPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDPViewController.swift; sourceTree = "<group>"; };
 		A8646D7D260E0AF300604FE0 /* DepartmentSelectorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentSelectorViewModel.swift; sourceTree = "<group>"; };
 		A8646D85260E0B1400604FE0 /* Department.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Department.swift; sourceTree = "<group>"; };
+		A8646D98260E101000604FE0 /* AppServicesAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppServicesAssembly.swift; sourceTree = "<group>"; };
+		A8646D9E260E109900604FE0 /* DepartmentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentCollectionViewCell.swift; sourceTree = "<group>"; };
+		A8646DA4260E10AD00604FE0 /* DepartmentCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DepartmentCollectionViewCell.xib; sourceTree = "<group>"; };
+		A8646DAF260E144100604FE0 /* UICollectionViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extensions.swift"; sourceTree = "<group>"; };
+		A8646DB4260E145F00604FE0 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
 		A9A06539494D265031B76261 /* Pods-stellamc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stellamc.debug.xcconfig"; path = "Target Support Files/Pods-stellamc/Pods-stellamc.debug.xcconfig"; sourceTree = "<group>"; };
 		B1F66F76C6DEB1DDE6A6BA5D /* Pods_stellamcTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stellamcTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -257,6 +267,7 @@
 		A8646C9B260DF1B000604FE0 /* Assemblies */ = {
 			isa = PBXGroup;
 			children = (
+				A8646D98260E101000604FE0 /* AppServicesAssembly.swift */,
 			);
 			path = Assemblies;
 			sourceTree = "<group>";
@@ -322,6 +333,8 @@
 			isa = PBXGroup;
 			children = (
 				A8646CD0260DF30300604FE0 /* Colors.swift */,
+				A8646DB4260E145F00604FE0 /* UICollectionView+Extensions.swift */,
+				A8646DAF260E144100604FE0 /* UICollectionViewCell+Extensions.swift */,
 				A8646CBC260DF2B400604FE0 /* UITableView+Extensions.swift */,
 				A8646CC1260DF2C500604FE0 /* UITableViewCell+Extensions.swift */,
 				A8646CC6260DF2D800604FE0 /* UIView+Extensions.swift */,
@@ -345,6 +358,8 @@
 				A8646D85260E0B1400604FE0 /* Department.swift */,
 				A8646D7B260E0AD600604FE0 /* View Controllers */,
 				A8646D7C260E0ADC00604FE0 /* View Models */,
+				A8646D9D260E108700604FE0 /* Views */,
+				A8646DA3260E109E00604FE0 /* Xibs */,
 			);
 			path = "Department Selector Page";
 			sourceTree = "<group>";
@@ -417,6 +432,22 @@
 				A8646D7D260E0AF300604FE0 /* DepartmentSelectorViewModel.swift */,
 			);
 			path = "View Models";
+			sourceTree = "<group>";
+		};
+		A8646D9D260E108700604FE0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A8646D9E260E109900604FE0 /* DepartmentCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A8646DA3260E109E00604FE0 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				A8646DA4260E10AD00604FE0 /* DepartmentCollectionViewCell.xib */,
+			);
+			path = Xibs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -542,6 +573,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8646DA5260E10AD00604FE0 /* DepartmentCollectionViewCell.xib in Resources */,
 				A8646C54260DEE9D00604FE0 /* LaunchScreen.storyboard in Resources */,
 				A8646C51260DEE9D00604FE0 /* Assets.xcassets in Resources */,
 				A8646C4F260DEE9C00604FE0 /* Main.storyboard in Resources */,
@@ -659,10 +691,13 @@
 				A8646CBD260DF2B400604FE0 /* UITableView+Extensions.swift in Sources */,
 				A8646CE1260DF37300604FE0 /* NetworkError.swift in Sources */,
 				A8646D16260DF5C700604FE0 /* ReadyToWearRequest.swift in Sources */,
+				A8646DB0260E144100604FE0 /* UICollectionViewCell+Extensions.swift in Sources */,
+				A8646D9F260E109900604FE0 /* DepartmentCollectionViewCell.swift in Sources */,
 				A8646D6C260E006700604FE0 /* DepartmentViewController.swift in Sources */,
 				A8646CB7260DF28000604FE0 /* TypeAliases.swift in Sources */,
 				A8646CEA260DF3D400604FE0 /* SceneDelegate+UITests.swift in Sources */,
 				A8646D23260DF7C500604FE0 /* BaseDepartmentRequest.swift in Sources */,
+				A8646D99260E101000604FE0 /* AppServicesAssembly.swift in Sources */,
 				A8646D71260E008A00604FE0 /* DepartmentSelectorViewController.swift in Sources */,
 				A8646CDC260DF35700604FE0 /* AppError.swift in Sources */,
 				A8646C48260DEE9C00604FE0 /* AppDelegate.swift in Sources */,
@@ -676,6 +711,7 @@
 				A8646D64260E002400604FE0 /* NetworkMonitorService.swift in Sources */,
 				A8646D7E260E0AF300604FE0 /* DepartmentSelectorViewModel.swift in Sources */,
 				A8646D76260E009700604FE0 /* PDPViewController.swift in Sources */,
+				A8646DB5260E145F00604FE0 /* UICollectionView+Extensions.swift in Sources */,
 				A8646CF3260DF58C00604FE0 /* BeautyRequest.swift in Sources */,
 				A8646D44260DFB8D00604FE0 /* DepartmentResponse.swift in Sources */,
 				A8646D0C260DF5B100604FE0 /* MainAccessoriesRequest.swift in Sources */,

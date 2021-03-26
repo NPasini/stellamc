@@ -13,25 +13,25 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
 
-//        navigationService = AssemblerWrapper.shared.resolve(NavigationService.self)
-//
-//        if let windowScene = scene as? UIWindowScene {
-//            let window = UIWindow(windowScene: windowScene)
-//
-//            let presenter = UINavigationController()
-//            window.rootViewController = presenter
-//
-//            self.window = window
-//            window.makeKeyAndVisible()
-//
-//            // Check if UITesting are running
-//            if UserDefaults.standard.bool(forKey: "UITesting") {
+        let navigationService = AssemblerWrapper.shared.resolve(NavigationService.self)
+
+        if let windowScene = scene as? UIWindowScene {
+            let window = UIWindow(windowScene: windowScene)
+
+            let presenter = UINavigationController()
+            window.rootViewController = presenter
+
+            self.window = window
+            window.makeKeyAndVisible()
+
+            // Check if UITesting are running
+            if UserDefaults.standard.bool(forKey: "UITesting") {
 //                createViewControllerForTesting(using: navigationService, presenter: presenter)
-//            } else {
-//                let viewModel = AssemblerWrapper.shared.resolve(RepositorySelectorViewModelProtocol.self)
-//                navigationService?.push(page: .repositorySelector, with: viewModel, using: presenter, animated: false)
-//            }
-//        }
+            } else {
+                let viewModel = DepartmentSelectorViewModel()
+                navigationService?.push(page: .departmentSelector, with: viewModel, using: presenter, animated: false)
+            }
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
