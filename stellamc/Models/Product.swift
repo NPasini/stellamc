@@ -22,7 +22,7 @@ struct Product: Decodable {
     let microCategory: String?
     let macroCategory: String?
     let thumbURLString: String
-    let imageURLString: String
+    let pdpImagesURLStrings: [String]
 
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
@@ -38,7 +38,7 @@ struct Product: Decodable {
         let folderId = id.prefix(2)
         let commonURL = "https://www.stellamccartney.com/\(folderId)/\(id)_"
         thumbURLString = commonURL + "8_c.jpg"
-        imageURLString = commonURL + "11_c.jpg"
+        pdpImagesURLStrings = [commonURL + "11_c.jpg", commonURL + "11_g.jpg", commonURL + "11_h.jpg", commonURL + "11_i.jpg", commonURL + "11_p.jpg", commonURL + "11_q.jpg", commonURL + "11_s.jpg"]
     }
 }
 
