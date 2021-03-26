@@ -10,6 +10,7 @@ import UIKit
 class DepartmentCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var titleLable: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
 
     private(set) var department: Department?
 
@@ -23,10 +24,12 @@ class DepartmentCollectionViewCell: UICollectionViewCell {
         super.prepareForReuse()
 
         titleLable.text = ""
+        imageView.image = nil
     }
 
     func configure(for department: Department) {
         titleLable.text = department.name
+        imageView.image = UIImage(named: department.image)
     }
 }
 

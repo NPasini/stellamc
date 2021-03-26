@@ -25,4 +25,17 @@ enum Department {
             return "Ready to wear"
         }
     }
+
+    var image: String {
+        switch self {
+        case .beauty:
+            return "beauty"
+        case .lingerie:
+            return "lingerie"
+        case .accessories:
+            return "accessories"
+        case .readyToWear:
+            return "dress"
+        }
+    }
 }
