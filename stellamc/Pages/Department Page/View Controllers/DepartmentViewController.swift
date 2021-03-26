@@ -8,4 +8,8 @@
 import UIKit
 
 class DepartmentViewController: BaseViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
 }

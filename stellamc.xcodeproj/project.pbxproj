@@ -48,6 +48,8 @@
 		A8646D6C260E006700604FE0 /* DepartmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8646D6B260E006700604FE0 /* DepartmentViewController.swift */; };
 		A8646D71260E008A00604FE0 /* DepartmentSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8646D70260E008A00604FE0 /* DepartmentSelectorViewController.swift */; };
 		A8646D76260E009700604FE0 /* PDPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8646D75260E009700604FE0 /* PDPViewController.swift */; };
+		A8646D7E260E0AF300604FE0 /* DepartmentSelectorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8646D7D260E0AF300604FE0 /* DepartmentSelectorViewModel.swift */; };
+		A8646D86260E0B1400604FE0 /* Department.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8646D85260E0B1400604FE0 /* Department.swift */; };
 		ADEAAE445298F5B2021727A2 /* Pods_stellamc_stellamcUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FE8A42731BB28830520A70 /* Pods_stellamc_stellamcUITests.framework */; };
 		D2B9393E55061C8E856DF8E5 /* Pods_stellamc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C4586004247617B42D96F4D /* Pods_stellamc.framework */; };
 		F70F437295B3D7B4F2DE6EC6 /* Pods_stellamcTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F66F76C6DEB1DDE6A6BA5D /* Pods_stellamcTests.framework */; };
@@ -119,6 +121,8 @@
 		A8646D6B260E006700604FE0 /* DepartmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentViewController.swift; sourceTree = "<group>"; };
 		A8646D70260E008A00604FE0 /* DepartmentSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentSelectorViewController.swift; sourceTree = "<group>"; };
 		A8646D75260E009700604FE0 /* PDPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDPViewController.swift; sourceTree = "<group>"; };
+		A8646D7D260E0AF300604FE0 /* DepartmentSelectorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentSelectorViewModel.swift; sourceTree = "<group>"; };
+		A8646D85260E0B1400604FE0 /* Department.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Department.swift; sourceTree = "<group>"; };
 		A9A06539494D265031B76261 /* Pods-stellamc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stellamc.debug.xcconfig"; path = "Target Support Files/Pods-stellamc/Pods-stellamc.debug.xcconfig"; sourceTree = "<group>"; };
 		B1F66F76C6DEB1DDE6A6BA5D /* Pods_stellamcTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stellamcTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -338,7 +342,9 @@
 		A8646CE5260DF38500604FE0 /* Department Selector Page */ = {
 			isa = PBXGroup;
 			children = (
-				A8646D70260E008A00604FE0 /* DepartmentSelectorViewController.swift */,
+				A8646D85260E0B1400604FE0 /* Department.swift */,
+				A8646D7B260E0AD600604FE0 /* View Controllers */,
+				A8646D7C260E0ADC00604FE0 /* View Models */,
 			);
 			path = "Department Selector Page";
 			sourceTree = "<group>";
@@ -346,7 +352,7 @@
 		A8646CE6260DF39C00604FE0 /* Department Page */ = {
 			isa = PBXGroup;
 			children = (
-				A8646D6B260E006700604FE0 /* DepartmentViewController.swift */,
+				A8646D7A260E0ACB00604FE0 /* View Controllers */,
 			);
 			path = "Department Page";
 			sourceTree = "<group>";
@@ -387,6 +393,30 @@
 				A8646D15260DF5C600604FE0 /* ReadyToWearRequest.swift */,
 			);
 			path = Departments;
+			sourceTree = "<group>";
+		};
+		A8646D7A260E0ACB00604FE0 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A8646D6B260E006700604FE0 /* DepartmentViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A8646D7B260E0AD600604FE0 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A8646D70260E008A00604FE0 /* DepartmentSelectorViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A8646D7C260E0ADC00604FE0 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				A8646D7D260E0AF300604FE0 /* DepartmentSelectorViewModel.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -644,6 +674,7 @@
 				A8646CA1260DF1EB00604FE0 /* Navigation.swift in Sources */,
 				A8646CA6260DF1FB00604FE0 /* Page.swift in Sources */,
 				A8646D64260E002400604FE0 /* NetworkMonitorService.swift in Sources */,
+				A8646D7E260E0AF300604FE0 /* DepartmentSelectorViewModel.swift in Sources */,
 				A8646D76260E009700604FE0 /* PDPViewController.swift in Sources */,
 				A8646CF3260DF58C00604FE0 /* BeautyRequest.swift in Sources */,
 				A8646D44260DFB8D00604FE0 /* DepartmentResponse.swift in Sources */,
@@ -655,6 +686,7 @@
 				A8646CB2260DF26E00604FE0 /* ViewModel.swift in Sources */,
 				A8646CC7260DF2D800604FE0 /* UIView+Extensions.swift in Sources */,
 				A8646CD6260DF32800604FE0 /* NetworkMonitor.swift in Sources */,
+				A8646D86260E0B1400604FE0 /* Department.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
