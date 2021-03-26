@@ -11,31 +11,29 @@ import ReactiveSwift
 
 final class DepartmentViewModel: ViewModel {
 
-    let errorSignal: Property<Bool>
+    let errorSignal: Property<String>
     let stopFetchingData: Property<Bool>
-    let gazersDataSource: MutableProperty<[Product]>
+    let productsDataSource: MutableProperty<[Product]>
 
     private var currentPage: Int
     private var isFetching: Bool
-    private var errorString: String
     private let itemsPerPage: Int = 50
     private let serialDisposable: SerialDisposable
-    private let errorSignalPipe: (output: VoidSignal, input: VoidSignal.Observer)
     private let stopFetchingPipe: (output: BoolSignal, input: BoolSignal.Observer)
     private let departmentProductsRepository: DepartmentProductsRepositoryService?
+    private let errorSignalPipe: (output: StringSignal, input: StringSignal.Observer)
 
     // MARK: - Lyfe Cycle
 
     init(department: Department) {
         currentPage = 1
-        errorString = ""
         isFetching = false
-        errorSignalPipe = VoidSignal.pipe()
         stopFetchingPipe = BoolSignal.pipe()
-        gazersDataSource = MutableProperty([])
+        errorSignalPipe = StringSignal.pipe()
+        productsDataSource = MutableProperty([])
         serialDisposable = SerialDisposable(nil)
+        errorSignal = Property(initial: "", then: errorSignalPipe.output)
         stopFetchingData = Property(initial: false, then: stopFetchingPipe.output)
-        errorSignal = Property(initial: false, then: errorSignalPipe.output.map({ true }))
         departmentProductsRepository = AssemblerWrapper.shared.resolve(DepartmentProductsRepositoryService.self, argument: department)
     }
 
@@ -49,14 +47,6 @@ final class DepartmentViewModel: ViewModel {
 
     //MARK: Public Functions
 
-    func errorMessage() -> String {
-        return errorString
-    }
-
-    func isValid() -> Bool {
-        return true
-    }
-
     func getProducts() {
         if (!isFetching && !stopFetchingData.value) {
             OSLogger.dataFlowLog(message: "Fetching new Department Products for page \(currentPage)", access: .public, type: .debug)
@@ -65,9 +55,8 @@ final class DepartmentViewModel: ViewModel {
             if let repository = departmentProductsRepository {
                 serialDisposable.inner = repository.getProducts(page: currentPage).on(failed: { [weak self] (error: NSError) in
                     self?.isFetching = false
-                    self?.errorString = "An error occurred while retrieving data"
                     self?.stopFetchingPipe.input.send(value: true)
-                    self?.errorSignalPipe.input.send(value: ())
+                    self?.errorSignalPipe.input.send(value: "An error occurred while retrieving data")
                 }, completed: { [weak self] in
                     self?.currentPage += 1
                     self?.isFetching = false
@@ -77,9 +66,9 @@ final class DepartmentViewModel: ViewModel {
                         self?.stopFetchingPipe.input.send(value: endOfFetchingReachedValue)
                     }
 
-                    OSLogger.dataFlowLog(message: "Appending \(newProducts.count) new Department Products to previous \(self?.gazersDataSource.value.count ?? 0) Products", access: .public, type: .debug)
+                    OSLogger.dataFlowLog(message: "Appending \(newProducts.count) new Department Products to previous \(self?.productsDataSource.value.count ?? 0) Products", access: .public, type: .debug)
 
-                    self?.gazersDataSource.value.append(contentsOf: newProducts)
+                    self?.productsDataSource.value.append(contentsOf: newProducts)
                 }).start()
             }
         } else if (isFetching) {
