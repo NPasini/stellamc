@@ -57,6 +57,7 @@
 		A8646E06260E562F00604FE0 /* DepartmentProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8646E04260E562F00604FE0 /* DepartmentProductTableViewCell.xib */; };
 		A8646E15260E71EA00604FE0 /* validResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = A8646E14260E71EA00604FE0 /* validResponse.json */; };
 		A8646E20260E757900604FE0 /* DepartmentResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8646E1F260E757900604FE0 /* DepartmentResults.swift */; };
+		A8646E30260E968D00604FE0 /* PDPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8646E2F260E968D00604FE0 /* PDPViewModel.swift */; };
 		ADEAAE445298F5B2021727A2 /* Pods_stellamc_stellamcUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FE8A42731BB28830520A70 /* Pods_stellamc_stellamcUITests.framework */; };
 		D2B9393E55061C8E856DF8E5 /* Pods_stellamc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C4586004247617B42D96F4D /* Pods_stellamc.framework */; };
 		F70F437295B3D7B4F2DE6EC6 /* Pods_stellamcTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F66F76C6DEB1DDE6A6BA5D /* Pods_stellamcTests.framework */; };
@@ -137,6 +138,7 @@
 		A8646E04260E562F00604FE0 /* DepartmentProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DepartmentProductTableViewCell.xib; sourceTree = "<group>"; };
 		A8646E14260E71EA00604FE0 /* validResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = validResponse.json; sourceTree = "<group>"; };
 		A8646E1F260E757900604FE0 /* DepartmentResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentResults.swift; sourceTree = "<group>"; };
+		A8646E2F260E968D00604FE0 /* PDPViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDPViewModel.swift; sourceTree = "<group>"; };
 		A9A06539494D265031B76261 /* Pods-stellamc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stellamc.debug.xcconfig"; path = "Target Support Files/Pods-stellamc/Pods-stellamc.debug.xcconfig"; sourceTree = "<group>"; };
 		B1F66F76C6DEB1DDE6A6BA5D /* Pods_stellamcTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stellamcTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -384,7 +386,8 @@
 		A8646CE7260DF3A400604FE0 /* Product Detail Page */ = {
 			isa = PBXGroup;
 			children = (
-				A8646D75260E009700604FE0 /* PDPViewController.swift */,
+				A8646E2A260E966800604FE0 /* View Controllers */,
+				A8646E2B260E967500604FE0 /* View Models */,
 			);
 			path = "Product Detail Page";
 			sourceTree = "<group>";
@@ -518,6 +521,22 @@
 				A8646E14260E71EA00604FE0 /* validResponse.json */,
 			);
 			path = jsons;
+			sourceTree = "<group>";
+		};
+		A8646E2A260E966800604FE0 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A8646D75260E009700604FE0 /* PDPViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A8646E2B260E967500604FE0 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				A8646E2F260E968D00604FE0 /* PDPViewModel.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -790,6 +809,7 @@
 				A8646CAD260DF26500604FE0 /* BaseViewController.swift in Sources */,
 				A8646D34260DFAE600604FE0 /* Product.swift in Sources */,
 				A8646E20260E757900604FE0 /* DepartmentResults.swift in Sources */,
+				A8646E30260E968D00604FE0 /* PDPViewModel.swift in Sources */,
 				A8646CC2260DF2C500604FE0 /* UITableViewCell+Extensions.swift in Sources */,
 				A8646DE1260E503D00604FE0 /* RepositoriesAssembly.swift in Sources */,
 				A8646CB2260DF26E00604FE0 /* ViewModel.swift in Sources */,
