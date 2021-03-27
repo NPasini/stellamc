@@ -40,10 +40,10 @@ class PDPViewController: BaseViewController {
         view.addSubview(childViewController.view)
 
         NSLayoutConstraint.activate([
-            childViewController.view.topAnchor.constraint(equalTo: view.topAnchor),
-            childViewController.view.leftAnchor.constraint(equalTo: view.leftAnchor),
-            childViewController.view.rightAnchor.constraint(equalTo: view.rightAnchor),
-            childViewController.view.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+            childViewController.view.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            childViewController.view.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor),
+            childViewController.view.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor),
+            childViewController.view.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
         ])
 
         childViewController.didMove(toParent: self)

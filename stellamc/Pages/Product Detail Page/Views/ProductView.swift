@@ -43,21 +43,31 @@ struct ProductView: View {
                         .foregroundColor(.backGrey)
                 }
 
-                if let macroCategory = product.macroCategory {
-                    Text(macroCategory.lowercased().capitalizingFirstLetter())
-                        .font(.callout)
-                        .foregroundColor(.backLightGrey)
-                }
+                HStack(alignment: .center, spacing: 20, content: {
+                    if let macroCategory = product.macroCategory {
+                        Text(macroCategory.lowercased().capitalizingFirstLetter())
+                            .padding(5)
+                            .font(.callout)
+                            .foregroundColor(.backGrey)
+                            .background(Color.frontOrange)
+                            .clipShape(Capsule())
+                    }
 
-                if let microCategory = product.microCategory {
-                    Text(microCategory.lowercased().capitalizingFirstLetter())
-                        .font(.callout)
-                        .foregroundColor(.backLightGrey)
-                }
+                    if let microCategory = product.microCategory {
+                        Text(microCategory.lowercased().capitalizingFirstLetter())
+                            .padding(5)
+                            .font(.callout)
+                            .foregroundColor(.backGrey)
+                            .background(Color.frontOrange)
+                            .clipShape(Capsule())
+                    }
+                })
+                .padding(.top, 15)
             }
             .padding(.horizontal, 15)
             .padding([.top, .bottom], 10)
         }
+        .background(Color.backLightGrey)
     }
 }
 
