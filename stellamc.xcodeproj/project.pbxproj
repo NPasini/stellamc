@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A8263309260F2AD2009AA6D0 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8263308260F2AD2009AA6D0 /* String+Extensions.swift */; };
+		A826331D260F32E4009AA6D0 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = A826331C260F32E4009AA6D0 /* SDWebImageSwiftUI */; };
 		A8646C48260DEE9C00604FE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8646C47260DEE9C00604FE0 /* AppDelegate.swift */; };
 		A8646C4A260DEE9C00604FE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8646C49260DEE9C00604FE0 /* SceneDelegate.swift */; };
 		A8646C4F260DEE9C00604FE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8646C4D260DEE9C00604FE0 /* Main.storyboard */; };
@@ -60,6 +62,7 @@
 		A8646E30260E968D00604FE0 /* PDPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8646E2F260E968D00604FE0 /* PDPViewModel.swift */; };
 		A8646E35260E9AF400604FE0 /* PDPHostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8646E34260E9AF400604FE0 /* PDPHostController.swift */; };
 		A8646E3E260F155A00604FE0 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8646E3D260F155A00604FE0 /* ProductView.swift */; };
+		A8646E4F260F1D1E00604FE0 /* ImagesCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8646E4E260F1D1E00604FE0 /* ImagesCarousel.swift */; };
 		ADEAAE445298F5B2021727A2 /* Pods_stellamc_stellamcUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FE8A42731BB28830520A70 /* Pods_stellamc_stellamcUITests.framework */; };
 		D2B9393E55061C8E856DF8E5 /* Pods_stellamc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C4586004247617B42D96F4D /* Pods_stellamc.framework */; };
 		F70F437295B3D7B4F2DE6EC6 /* Pods_stellamcTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F66F76C6DEB1DDE6A6BA5D /* Pods_stellamcTests.framework */; };
@@ -90,6 +93,7 @@
 		6423D4A3DF9468A1292BFE3C /* Pods-stellamcTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stellamcTests.debug.xcconfig"; path = "Target Support Files/Pods-stellamcTests/Pods-stellamcTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8C4586004247617B42D96F4D /* Pods_stellamc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stellamc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C872FDA7A5830C40869E7DE /* Pods-stellamc-stellamcUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stellamc-stellamcUITests.debug.xcconfig"; path = "Target Support Files/Pods-stellamc-stellamcUITests/Pods-stellamc-stellamcUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A8263308260F2AD2009AA6D0 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		A8646C44260DEE9C00604FE0 /* stellamc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stellamc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8646C47260DEE9C00604FE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8646C49260DEE9C00604FE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -143,6 +147,7 @@
 		A8646E2F260E968D00604FE0 /* PDPViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDPViewModel.swift; sourceTree = "<group>"; };
 		A8646E34260E9AF400604FE0 /* PDPHostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDPHostController.swift; sourceTree = "<group>"; };
 		A8646E3D260F155A00604FE0 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
+		A8646E4E260F1D1E00604FE0 /* ImagesCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesCarousel.swift; sourceTree = "<group>"; };
 		A9A06539494D265031B76261 /* Pods-stellamc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stellamc.debug.xcconfig"; path = "Target Support Files/Pods-stellamc/Pods-stellamc.debug.xcconfig"; sourceTree = "<group>"; };
 		B1F66F76C6DEB1DDE6A6BA5D /* Pods_stellamcTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stellamcTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -156,6 +161,7 @@
 				A8646C82260DF0C200604FE0 /* OSLogger in Frameworks */,
 				A8646C8B260DF11900604FE0 /* ReactiveCocoa in Frameworks */,
 				A8646C88260DF0E100604FE0 /* ReactiveSwift in Frameworks */,
+				A826331D260F32E4009AA6D0 /* SDWebImageSwiftUI in Frameworks */,
 				A8646C7F260DF0BA00604FE0 /* NetworkManager in Frameworks */,
 				A8646C85260DF0DB00604FE0 /* Swinject in Frameworks */,
 				D2B9393E55061C8E856DF8E5 /* Pods_stellamc.framework in Frameworks */,
@@ -345,6 +351,7 @@
 			isa = PBXGroup;
 			children = (
 				A8646CD0260DF30300604FE0 /* Colors.swift */,
+				A8263308260F2AD2009AA6D0 /* String+Extensions.swift */,
 				A8646DB4260E145F00604FE0 /* UICollectionView+Extensions.swift */,
 				A8646DAF260E144100604FE0 /* UICollectionViewCell+Extensions.swift */,
 				A8646CBC260DF2B400604FE0 /* UITableView+Extensions.swift */,
@@ -548,6 +555,7 @@
 		A8646E3C260F154700604FE0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A8646E4E260F1D1E00604FE0 /* ImagesCarousel.swift */,
 				A8646E3D260F155A00604FE0 /* ProductView.swift */,
 			);
 			path = Views;
@@ -577,6 +585,7 @@
 				A8646C87260DF0E100604FE0 /* ReactiveSwift */,
 				A8646C8A260DF11900604FE0 /* ReactiveCocoa */,
 				A8646C8D260DF12A00604FE0 /* SDWebImage */,
+				A826331C260F32E4009AA6D0 /* SDWebImageSwiftUI */,
 			);
 			productName = stellamc;
 			productReference = A8646C44260DEE9C00604FE0 /* stellamc.app */;
@@ -659,6 +668,7 @@
 				A8646C86260DF0E100604FE0 /* XCRemoteSwiftPackageReference "ReactiveSwift" */,
 				A8646C89260DF11900604FE0 /* XCRemoteSwiftPackageReference "ReactiveCocoa" */,
 				A8646C8C260DF12A00604FE0 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				A826331B260F32E4009AA6D0 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = A8646C45260DEE9C00604FE0 /* Products */;
 			projectDirPath = "";
@@ -814,12 +824,14 @@
 				A8646D5F260DFFF500604FE0 /* NavigationService.swift in Sources */,
 				A8646C97260DF1A000604FE0 /* AssemblerWrapper.swift in Sources */,
 				A8646CA1260DF1EB00604FE0 /* Navigation.swift in Sources */,
+				A8263309260F2AD2009AA6D0 /* String+Extensions.swift in Sources */,
 				A8646CA6260DF1FB00604FE0 /* Page.swift in Sources */,
 				A8646D64260E002400604FE0 /* NetworkMonitorService.swift in Sources */,
 				A8646D7E260E0AF300604FE0 /* DepartmentSelectorViewModel.swift in Sources */,
 				A8646D76260E009700604FE0 /* PDPViewController.swift in Sources */,
 				A8646DB5260E145F00604FE0 /* UICollectionView+Extensions.swift in Sources */,
 				A8646DC9260E225300604FE0 /* DepartmentViewModel.swift in Sources */,
+				A8646E4F260F1D1E00604FE0 /* ImagesCarousel.swift in Sources */,
 				A8646D44260DFB8D00604FE0 /* DepartmentResponse.swift in Sources */,
 				A8646CD1260DF30300604FE0 /* Colors.swift in Sources */,
 				A8646CAD260DF26500604FE0 /* BaseViewController.swift in Sources */,
@@ -1171,6 +1183,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		A826331B260F32E4009AA6D0 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.2;
+			};
+		};
 		A8646C7D260DF0BA00604FE0 /* XCRemoteSwiftPackageReference "NetworkManager" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/NPasini/NetworkManager.git";
@@ -1222,6 +1242,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		A826331C260F32E4009AA6D0 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A826331B260F32E4009AA6D0 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
 		A8646C7E260DF0BA00604FE0 /* NetworkManager */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A8646C7D260DF0BA00604FE0 /* XCRemoteSwiftPackageReference "NetworkManager" */;

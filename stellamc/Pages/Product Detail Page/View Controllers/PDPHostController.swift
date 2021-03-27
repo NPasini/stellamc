@@ -9,17 +9,16 @@ import SwiftUI
 import Foundation
 
 final class PDPHostController: UIHostingController<AnyView> {
-//    private let displayedView: some View = MockList().environmentObject(SelectableMockManager.shared.getMockedData())
-
-    private let productView: some View = ProductView()
+//    private let displayedView: some View = ProductView().environmentObject(SelectableMockManager.shared.getMockedData())
 
     required init?(coder: NSCoder) {
         super.init(coder: coder)
 
-        rootView = AnyView(productView)
+        fatalError("Wrong initialization of PDPViewController")
     }
 
-    init() {
+    init(product: Product) {
+        let productView: some View = ProductView(product: product)
         super.init(rootView: AnyView(productView))
     }
 }

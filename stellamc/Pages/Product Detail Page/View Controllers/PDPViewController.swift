@@ -9,6 +9,14 @@ import UIKit
 
 class PDPViewController: BaseViewController {
 
+    var pdpViewModel: PDPViewModel {
+        if viewModel is PDPViewModel {
+            return viewModel as! PDPViewModel
+        } else {
+            fatalError("The View Model has the wrong type")
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,7 +32,7 @@ class PDPViewController: BaseViewController {
     }
 
     private func insertHostedViewController() {
-        let childViewController = PDPHostController()
+        let childViewController = PDPHostController(product:  pdpViewModel.product)
 
         childViewController.view.translatesAutoresizingMaskIntoConstraints = false
 
@@ -32,10 +40,10 @@ class PDPViewController: BaseViewController {
         view.addSubview(childViewController.view)
 
         NSLayoutConstraint.activate([
-            childViewController.view.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            childViewController.view.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor),
-            childViewController.view.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor),
-            childViewController.view.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
+            childViewController.view.topAnchor.constraint(equalTo: view.topAnchor),
+            childViewController.view.leftAnchor.constraint(equalTo: view.leftAnchor),
+            childViewController.view.rightAnchor.constraint(equalTo: view.rightAnchor),
+            childViewController.view.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
 
         childViewController.didMove(toParent: self)
