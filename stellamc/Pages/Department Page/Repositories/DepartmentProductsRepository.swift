@@ -29,7 +29,7 @@ class DepartmentProductsRepository: DepartmentProductsRepositoryService {
         return SignalProducer {
             (observer, lifetime) in
 
-            let subscription = APIPerformer.shared.performApi(request, QoS: .default, completionQueue: .global(qos: .userInteractive)) { (result: Result<DepartmentResponse, NSError>) in
+            let subscription = APIPerformer.shared.performApi(request, QoS: .default, completionQueue: .global(qos: .userInteractive)) { (result: Result<DepartmentProductsResponse, NSError>) in
 
                 switch result {
                 case .success(let response):

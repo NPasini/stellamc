@@ -9,7 +9,7 @@ import OSLogger
 import Foundation
 import NetworkManager
 
-class DepartmentProductsRequest: GetRequest<DepartmentResponse> {
+class DepartmentProductsRequest: GetRequest<DepartmentProductsResponse> {
     let aveKey: String = "ave"
     let pageKey: String = "page"
     let genderKey: String = "gender"

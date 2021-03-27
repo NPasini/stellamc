@@ -1,0 +1,301 @@
+{
+    "Header": {
+        "StatusCode": 200,
+        "Description": "200 OK"
+    },
+    "ResultsLite": {
+        "TotalResults": 13,
+        "Items": [
+            {
+                "Code8": "48234439",
+                "BrandName": "STELLA McCARTNEY",
+                "MicroCategory": "Slip",
+                "MacroCategory": "Lingerie",
+                "FullPrice": 45,
+                "DiscountedPrice": 45,
+                "ModelNames": "Perizoma Ivy Chatting",
+                "Sizes": [
+                    {
+                        "Text": "L",
+                        "ClassFamily": "INT"
+                    }
+                ],
+                "Colors": [
+                    {
+                        "Id": 25254
+                    }
+                ]
+            },
+            {
+                "Code8": "48234442",
+                "BrandName": "STELLA McCARTNEY",
+                "MicroCategory": "Slip",
+                "MacroCategory": "Lingerie",
+                "FullPrice": 55,
+                "DiscountedPrice": 55,
+                "ModelNames": "Slip Ivy Chatting",
+                "Sizes": [
+                    {
+                        "Text": "S",
+                        "ClassFamily": "INT"
+                    },
+                    {
+                        "Text": "L",
+                        "ClassFamily": "INT"
+                    }
+                ],
+                "Colors": [
+                    {
+                        "Id": 25254
+                    }
+                ]
+            },
+            {
+                "Code8": "47269075",
+                "BrandName": "STELLA McCARTNEY",
+                "DefaultCode10": "47269075TT",
+                "MicroCategory": "Bikini",
+                "MacroCategory": "Swimwear",
+                "FullPrice": 120,
+                "DiscountedPrice": 120,
+                "ModelNames": "Top Stellawear",
+                "Sizes": [
+                    {
+                        "Text": "XS/S",
+                        "ClassFamily": "INT"
+                    }
+                ],
+                "Colors": [
+                    {
+                        "Id": 25254
+                    }
+                ]
+            },
+            {
+                "Code8": "47269070",
+                "BrandName": "STELLA McCARTNEY",
+                "MicroCategory": "Bikini",
+                "MacroCategory": "Swimwear",
+                "FullPrice": 95,
+                "DiscountedPrice": 95,
+                "ModelNames": "Slip Bikini Stellawear",
+                "Sizes": [
+                    {
+                        "Text": "XS/S",
+                        "ClassFamily": "INT"
+                    }
+                ],
+                "Colors": [
+                    {
+                        "Id": 25254
+                    }
+                ]
+            },
+            {
+                "Code8": "47269072",
+                "BrandName": "STELLA McCARTNEY",
+                "DefaultCode10": "47269072KL",
+                "MicroCategory": "Costumi interi",
+                "MacroCategory": "Swimwear",
+                "FullPrice": 230,
+                "DiscountedPrice": 230,
+                "ModelNames": "Body Stellawear",
+                "Sizes": [
+                    {
+                        "Text": "XS/S",
+                        "ClassFamily": "INT"
+                    }
+                ],
+                "Colors": [
+                    {
+                        "Id": 25254
+                    }
+                ]
+            },
+            {
+                "Code8": "47269115",
+                "BrandName": "STELLA McCARTNEY",
+                "MicroCategory": "Bikini",
+                "MacroCategory": "Swimwear",
+                "FullPrice": 95,
+                "DiscountedPrice": 95,
+                "ModelNames": "Slip Bikini Stellawear",
+                "Sizes": [
+                    {
+                        "Text": "XS/S",
+                        "ClassFamily": "INT"
+                    }
+                ],
+                "Colors": [
+                    {
+                        "Id": 25694
+                    }
+                ]
+            },
+            {
+                "Code8": "47269073",
+                "BrandName": "STELLA McCARTNEY",
+                "DefaultCode10": "47269073MW",
+                "MicroCategory": "Costumi interi",
+                "MacroCategory": "Swimwear",
+                "FullPrice": 230,
+                "DiscountedPrice": 230,
+                "ModelNames": "Body Stellawear",
+                "Sizes": [
+                    {
+                        "Text": "XS/S",
+                        "ClassFamily": "INT"
+                    },
+                    {
+                        "Text": "M/L",
+                        "ClassFamily": "INT"
+                    }
+                ],
+                "Colors": [
+                    {
+                        "Id": 21517
+                    }
+                ]
+            },
+            {
+                "Code8": "47269118",
+                "BrandName": "STELLA McCARTNEY",
+                "DefaultCode10": "47269118OB",
+                "MicroCategory": "Costumi interi",
+                "MacroCategory": "Swimwear",
+                "FullPrice": 250,
+                "DiscountedPrice": 250,
+                "ModelNames": "Body Stellawear Grafico",
+                "Sizes": [
+                    {
+                        "Text": "XS/S",
+                        "ClassFamily": "INT"
+                    },
+                    {
+                        "Text": "M/L",
+                        "ClassFamily": "INT"
+                    }
+                ],
+                "Colors": [
+                    {
+                        "Id": 25694
+                    }
+                ]
+            },
+            {
+                "Code8": "47269069",
+                "BrandName": "STELLA McCARTNEY",
+                "DefaultCode10": "47269069LE",
+                "MicroCategory": "Costumi interi",
+                "MacroCategory": "Swimwear",
+                "FullPrice": 230,
+                "DiscountedPrice": 230,
+                "ModelNames": "Body Stellawear",
+                "Sizes": [
+                    {
+                        "Text": "XS/S",
+                        "ClassFamily": "INT"
+                    }
+                ],
+                "Colors": [
+                    {
+                        "Id": 21503
+                    }
+                ]
+            },
+            {
+                "Code8": "47269071",
+                "BrandName": "STELLA McCARTNEY",
+                "DefaultCode10": "47269071XQ",
+                "MicroCategory": "Costumi interi",
+                "MacroCategory": "Swimwear",
+                "FullPrice": 250,
+                "DiscountedPrice": 250,
+                "ModelNames": "Body Stellawear Grafico",
+                "Sizes": [
+                    {
+                        "Text": "XS/S",
+                        "ClassFamily": "INT"
+                    },
+                    {
+                        "Text": "M/L",
+                        "ClassFamily": "INT"
+                    }
+                ],
+                "Colors": [
+                    {
+                        "Id": 21503
+                    }
+                ]
+            },
+            {
+                "Code8": "47269128",
+                "BrandName": "STELLA McCARTNEY",
+                "DefaultCode10": "47269128QD",
+                "MicroCategory": "Bikini",
+                "MacroCategory": "Swimwear",
+                "FullPrice": 95,
+                "DiscountedPrice": 95,
+                "ModelNames": "Top a Fascia Stellawear",
+                "Sizes": [
+                    {
+                        "Text": "XS/S",
+                        "ClassFamily": "INT"
+                    },
+                    {
+                        "Text": "M/L",
+                        "ClassFamily": "INT"
+                    }
+                ],
+                "Colors": [
+                    {
+                        "Id": 25694
+                    }
+                ]
+            },
+            {
+                "Code8": "47269081",
+                "BrandName": "STELLA McCARTNEY",
+                "DefaultCode10": "47269081PV",
+                "MicroCategory": "Bikini",
+                "MacroCategory": "Swimwear",
+                "FullPrice": 95,
+                "DiscountedPrice": 95,
+                "ModelNames": "Top a Fascia Stellawear",
+                "Sizes": [
+                    {
+                        "Text": "XS/S",
+                        "ClassFamily": "INT"
+                    }
+                ],
+                "Colors": [
+                    {
+                        "Id": 21503
+                    }
+                ]
+            },
+            {
+                "Code8": "47269082",
+                "BrandName": "STELLA McCARTNEY",
+                "DefaultCode10": "47269082HL",
+                "MicroCategory": "Bikini",
+                "MacroCategory": "Swimwear",
+                "FullPrice": 95,
+                "DiscountedPrice": 95,
+                "ModelNames": "Top a Fascia Stellawear",
+                "Sizes": [
+                    {
+                        "Text": "XS/S",
+                        "ClassFamily": "INT"
+                    }
+                ],
+                "Colors": [
+                    {
+                        "Id": 25254
+                    }
+                ]
+            }
+        ]
+    }
+}
+
