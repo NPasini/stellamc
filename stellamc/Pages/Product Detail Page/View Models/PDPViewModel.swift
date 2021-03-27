@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+struct PDPViewModel: ViewModel {
+
+    let product: Product
+
+    init(product: Product) {
+        self.product = product
+    }
+}
