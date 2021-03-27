@@ -6,45 +6,64 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct ProductView: View {
+
+    private var product: Product
+
+    init(product: Product) {
+        self.product = product
+    }
+
     var body: some View {
         ScrollView {
-            // ImageCarouselView Will Go Here.
+            GeometryReader { geometry in
+                ImageCarouselView(numberOfImages: self.product.pdpImagesURLs.count) {
+                    ForEach(self.product.pdpImagesURLs, id: \.self) { (imageURL: URL) in
+                        WebImage(url: imageURL)
+                            .resizable()
+                            .scaledToFill()
+                            .transition(.fade(duration: 0.5))
+                            .frame(width: geometry.size.width, height: geometry.size.height)
+                            .clipped()
+                    }
+                }
+            }.frame(height: 500, alignment: .center)
             
             VStack(alignment: .leading, spacing: 10) {
                 HStack {
-                    Image("swiftTom")
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 55, height: 55)
-                        .clipShape(Circle())
-                        .shadow(radius: 4)
-                    
-                    VStack(alignment: .leading) {
-                        Text("Written By")
-                            .foregroundColor(.gray)
-                        Text("Thomas Prezioso Jr")
-                    }
+                    Text(product.name.lowercased().capitalizingFirstLetter())
+                        .font(.headline)
+                        .foregroundColor(.frontOrange)
+                        .lineLimit(nil)
+                    Spacer()
+                    Text(String(format: "%.2f", round(product.price*100)/100) + " €")
+                        .font(.headline)
+                        .foregroundColor(.backGrey)
                 }
-                
-                Text("Feb 10 2020")
-                    .foregroundColor(.gray)
-                
-                Text("How to Make a Image Carousel in SwiftUI")
-                    .bold()
-                
-                Text("lorem ipsum sic dolor")
-                    .lineLimit(nil)
+
+                if let macroCategory = product.macroCategory {
+                    Text(macroCategory.lowercased().capitalizingFirstLetter())
+                        .font(.callout)
+                        .foregroundColor(.backLightGrey)
+                }
+
+                if let microCategory = product.microCategory {
+                    Text(microCategory.lowercased().capitalizingFirstLetter())
+                        .font(.callout)
+                        .foregroundColor(.backLightGrey)
+                }
             }
-            .padding(.horizontal)
-            .padding(.top, 16.0)
-        }.edgesIgnoringSafeArea(.all)
+            .padding(.horizontal, 15)
+            .padding([.top, .bottom], 10)
+        }
     }
 }
 
 struct ProductView_Previews: PreviewProvider {
     static var previews: some View {
-        ProductView()
+        let product = Product(id: "0943204", price: 30.5, name: "Jeans with very interesting pattern designed", microCategory: "Jeans blue", macroCategory: "Jeans denim", thumbURLString: URL(string: "https://jdsajdsa.sdadsa"), pdpImagesURLStrings: [])
+        ProductView(product: product)
     }
 }
