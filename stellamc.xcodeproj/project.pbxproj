@@ -22,6 +22,7 @@
 		A826337C260F856C009AA6D0 /* NotAvailableNetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A826337B260F856C009AA6D0 /* NotAvailableNetworkMonitor.swift */; };
 		A8263381260F858D009AA6D0 /* TestNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8263380260F858D009AA6D0 /* TestNavigation.swift */; };
 		A8263389260F85D6009AA6D0 /* MockedProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8263388260F85D6009AA6D0 /* MockedProducts.swift */; };
+		A8263394260F8BAD009AA6D0 /* DepartmentViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8263393260F8BAD009AA6D0 /* DepartmentViewModelTests.swift */; };
 		A8646C48260DEE9C00604FE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8646C47260DEE9C00604FE0 /* AppDelegate.swift */; };
 		A8646C4A260DEE9C00604FE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8646C49260DEE9C00604FE0 /* SceneDelegate.swift */; };
 		A8646C4F260DEE9C00604FE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8646C4D260DEE9C00604FE0 /* Main.storyboard */; };
@@ -120,6 +121,7 @@
 		A826337B260F856C009AA6D0 /* NotAvailableNetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotAvailableNetworkMonitor.swift; sourceTree = "<group>"; };
 		A8263380260F858D009AA6D0 /* TestNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNavigation.swift; sourceTree = "<group>"; };
 		A8263388260F85D6009AA6D0 /* MockedProducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedProducts.swift; sourceTree = "<group>"; };
+		A8263393260F8BAD009AA6D0 /* DepartmentViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentViewModelTests.swift; sourceTree = "<group>"; };
 		A8646C44260DEE9C00604FE0 /* stellamc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stellamc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8646C47260DEE9C00604FE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8646C49260DEE9C00604FE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -248,6 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				A826334E260F839F009AA6D0 /* DepartmentViewControllerTests.swift */,
+				A8263393260F8BAD009AA6D0 /* DepartmentViewModelTests.swift */,
 				A8263388260F85D6009AA6D0 /* MockedProducts.swift */,
 			);
 			path = "Department Page";
@@ -953,6 +956,7 @@
 				A826336E260F8519009AA6D0 /* TestDepartmentProductsRepositoryTests.swift in Sources */,
 				A8263377260F8555009AA6D0 /* AvailableNetworkMonitor.swift in Sources */,
 				A8263365260F84D5009AA6D0 /* EmptyTestDepartmentProductsRepository.swift in Sources */,
+				A8263394260F8BAD009AA6D0 /* DepartmentViewModelTests.swift in Sources */,
 				A826334F260F839F009AA6D0 /* DepartmentViewControllerTests.swift in Sources */,
 				A8263389260F85D6009AA6D0 /* MockedProducts.swift in Sources */,
 				A826332A260F7AC7009AA6D0 /* Json.swift in Sources */,
