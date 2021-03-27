@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 extension UIColor {
     class var backGrey: UIColor {
@@ -20,3 +21,10 @@ extension UIColor {
         return UIColor(named: "BackLightGrey") ?? .clear
     }
 }
+
+extension Color {
+    static let backGrey = Color(UIColor.backGrey)
+    static let frontOrange = Color(UIColor.frontOrange)
+    static let backLightGrey = Color(UIColor.backLightGrey)
+}
+
