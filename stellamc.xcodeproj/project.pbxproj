@@ -24,6 +24,13 @@
 		A8263389260F85D6009AA6D0 /* MockedProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8263388260F85D6009AA6D0 /* MockedProducts.swift */; };
 		A8263394260F8BAD009AA6D0 /* DepartmentViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8263393260F8BAD009AA6D0 /* DepartmentViewModelTests.swift */; };
 		A826339D260F8D42009AA6D0 /* DepartmentViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A826339C260F8D42009AA6D0 /* DepartmentViewControllerTests.swift */; };
+		A82633A9260F8EEC009AA6D0 /* MockedServicesWithAvailableNetworkAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82633A8260F8EEC009AA6D0 /* MockedServicesWithAvailableNetworkAssembly.swift */; };
+		A82633AE260F8F29009AA6D0 /* MockedServicesWithNotAvailableNetworkAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82633AD260F8F29009AA6D0 /* MockedServicesWithNotAvailableNetworkAssembly.swift */; };
+		A82633B4260F8F70009AA6D0 /* AvailableNetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82633B3260F8F70009AA6D0 /* AvailableNetworkMonitor.swift */; };
+		A82633B9260F8F85009AA6D0 /* NotAvailableNetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82633B8260F8F85009AA6D0 /* NotAvailableNetworkMonitor.swift */; };
+		A82633BE260F8F9B009AA6D0 /* EmptyDepartmentProductsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82633BD260F8F9B009AA6D0 /* EmptyDepartmentProductsRepository.swift */; };
+		A82633C6260F8FE0009AA6D0 /* MockedDepartmentProductsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82633C5260F8FE0009AA6D0 /* MockedDepartmentProductsRepository.swift */; };
+		A82633CE260F937F009AA6D0 /* DepartmentViewControllerNetworkNotAvailableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82633CD260F937F009AA6D0 /* DepartmentViewControllerNetworkNotAvailableTests.swift */; };
 		A8646C48260DEE9C00604FE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8646C47260DEE9C00604FE0 /* AppDelegate.swift */; };
 		A8646C4A260DEE9C00604FE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8646C49260DEE9C00604FE0 /* SceneDelegate.swift */; };
 		A8646C4F260DEE9C00604FE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8646C4D260DEE9C00604FE0 /* Main.storyboard */; };
@@ -123,6 +130,13 @@
 		A8263388260F85D6009AA6D0 /* MockedProducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedProducts.swift; sourceTree = "<group>"; };
 		A8263393260F8BAD009AA6D0 /* DepartmentViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentViewModelTests.swift; sourceTree = "<group>"; };
 		A826339C260F8D42009AA6D0 /* DepartmentViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentViewControllerTests.swift; sourceTree = "<group>"; };
+		A82633A8260F8EEC009AA6D0 /* MockedServicesWithAvailableNetworkAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedServicesWithAvailableNetworkAssembly.swift; sourceTree = "<group>"; };
+		A82633AD260F8F29009AA6D0 /* MockedServicesWithNotAvailableNetworkAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedServicesWithNotAvailableNetworkAssembly.swift; sourceTree = "<group>"; };
+		A82633B3260F8F70009AA6D0 /* AvailableNetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableNetworkMonitor.swift; sourceTree = "<group>"; };
+		A82633B8260F8F85009AA6D0 /* NotAvailableNetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotAvailableNetworkMonitor.swift; sourceTree = "<group>"; };
+		A82633BD260F8F9B009AA6D0 /* EmptyDepartmentProductsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyDepartmentProductsRepository.swift; sourceTree = "<group>"; };
+		A82633C5260F8FE0009AA6D0 /* MockedDepartmentProductsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedDepartmentProductsRepository.swift; sourceTree = "<group>"; };
+		A82633CD260F937F009AA6D0 /* DepartmentViewControllerNetworkNotAvailableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentViewControllerNetworkNotAvailableTests.swift; sourceTree = "<group>"; };
 		A8646C44260DEE9C00604FE0 /* stellamc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stellamc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8646C47260DEE9C00604FE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8646C49260DEE9C00604FE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -306,6 +320,7 @@
 			isa = PBXGroup;
 			children = (
 				A826339C260F8D42009AA6D0 /* DepartmentViewControllerTests.swift */,
+				A82633CD260F937F009AA6D0 /* DepartmentViewControllerNetworkNotAvailableTests.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -313,8 +328,38 @@
 		A82633A4260F8E87009AA6D0 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
+				A82633A5260F8EB6009AA6D0 /* Assemblies */,
+				A82633A6260F8EC4009AA6D0 /* Repositories */,
+				A82633A7260F8ED3009AA6D0 /* Services */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		A82633A5260F8EB6009AA6D0 /* Assemblies */ = {
+			isa = PBXGroup;
+			children = (
+				A82633A8260F8EEC009AA6D0 /* MockedServicesWithAvailableNetworkAssembly.swift */,
+				A82633AD260F8F29009AA6D0 /* MockedServicesWithNotAvailableNetworkAssembly.swift */,
+			);
+			path = Assemblies;
+			sourceTree = "<group>";
+		};
+		A82633A6260F8EC4009AA6D0 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				A82633BD260F8F9B009AA6D0 /* EmptyDepartmentProductsRepository.swift */,
+				A82633C5260F8FE0009AA6D0 /* MockedDepartmentProductsRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		A82633A7260F8ED3009AA6D0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A82633B3260F8F70009AA6D0 /* AvailableNetworkMonitor.swift */,
+				A82633B8260F8F85009AA6D0 /* NotAvailableNetworkMonitor.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		A8646C3B260DEE9C00604FE0 = {
@@ -920,8 +965,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8646E3E260F155A00604FE0 /* ProductView.swift in Sources */,
+				A82633AE260F8F29009AA6D0 /* MockedServicesWithNotAvailableNetworkAssembly.swift in Sources */,
+				A82633B4260F8F70009AA6D0 /* AvailableNetworkMonitor.swift in Sources */,
 				A8646CBD260DF2B400604FE0 /* UITableView+Extensions.swift in Sources */,
 				A8646CE1260DF37300604FE0 /* NetworkError.swift in Sources */,
+				A82633BE260F8F9B009AA6D0 /* EmptyDepartmentProductsRepository.swift in Sources */,
 				A8646DB0260E144100604FE0 /* UICollectionViewCell+Extensions.swift in Sources */,
 				A8646D9F260E109900604FE0 /* DepartmentCollectionViewCell.swift in Sources */,
 				A8646D6C260E006700604FE0 /* DepartmentViewController.swift in Sources */,
@@ -929,6 +977,7 @@
 				A8646E05260E562F00604FE0 /* DepartmentProductTableViewCell.swift in Sources */,
 				A8646CEA260DF3D400604FE0 /* SceneDelegate+UITests.swift in Sources */,
 				A8646D23260DF7C500604FE0 /* DepartmentProductsRequest.swift in Sources */,
+				A82633B9260F8F85009AA6D0 /* NotAvailableNetworkMonitor.swift in Sources */,
 				A8646D99260E101000604FE0 /* AppServicesAssembly.swift in Sources */,
 				A8646D71260E008A00604FE0 /* DepartmentSelectorViewController.swift in Sources */,
 				A8646CDC260DF35700604FE0 /* AppError.swift in Sources */,
@@ -942,6 +991,7 @@
 				A8646C97260DF1A000604FE0 /* AssemblerWrapper.swift in Sources */,
 				A8646CA1260DF1EB00604FE0 /* Navigation.swift in Sources */,
 				A8263309260F2AD2009AA6D0 /* String+Extensions.swift in Sources */,
+				A82633A9260F8EEC009AA6D0 /* MockedServicesWithAvailableNetworkAssembly.swift in Sources */,
 				A8646CA6260DF1FB00604FE0 /* Page.swift in Sources */,
 				A8646D64260E002400604FE0 /* NetworkMonitorService.swift in Sources */,
 				A8646D7E260E0AF300604FE0 /* DepartmentSelectorViewModel.swift in Sources */,
@@ -954,6 +1004,7 @@
 				A8646CAD260DF26500604FE0 /* BaseViewController.swift in Sources */,
 				A8646D34260DFAE600604FE0 /* Product.swift in Sources */,
 				A8646E20260E757900604FE0 /* DepartmentResults.swift in Sources */,
+				A82633C6260F8FE0009AA6D0 /* MockedDepartmentProductsRepository.swift in Sources */,
 				A8646E30260E968D00604FE0 /* PDPViewModel.swift in Sources */,
 				A8646CC2260DF2C500604FE0 /* UITableViewCell+Extensions.swift in Sources */,
 				A8646DE1260E503D00604FE0 /* RepositoriesAssembly.swift in Sources */,
@@ -989,6 +1040,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A826339D260F8D42009AA6D0 /* DepartmentViewControllerTests.swift in Sources */,
+				A82633CE260F937F009AA6D0 /* DepartmentViewControllerNetworkNotAvailableTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
