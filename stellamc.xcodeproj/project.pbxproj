@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		A8263309260F2AD2009AA6D0 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8263308260F2AD2009AA6D0 /* String+Extensions.swift */; };
 		A826331D260F32E4009AA6D0 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = A826331C260F32E4009AA6D0 /* SDWebImageSwiftUI */; };
+		A826332A260F7AC7009AA6D0 /* Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8263329260F7AC7009AA6D0 /* Json.swift */; };
+		A8263332260F7C31009AA6D0 /* DepartmentProductsRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8263331260F7C31009AA6D0 /* DepartmentProductsRequestTests.swift */; };
 		A8646C48260DEE9C00604FE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8646C47260DEE9C00604FE0 /* AppDelegate.swift */; };
 		A8646C4A260DEE9C00604FE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8646C49260DEE9C00604FE0 /* SceneDelegate.swift */; };
 		A8646C4F260DEE9C00604FE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8646C4D260DEE9C00604FE0 /* Main.storyboard */; };
@@ -94,6 +96,8 @@
 		8C4586004247617B42D96F4D /* Pods_stellamc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stellamc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C872FDA7A5830C40869E7DE /* Pods-stellamc-stellamcUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stellamc-stellamcUITests.debug.xcconfig"; path = "Target Support Files/Pods-stellamc-stellamcUITests/Pods-stellamc-stellamcUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A8263308260F2AD2009AA6D0 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		A8263329260F7AC7009AA6D0 /* Json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Json.swift; sourceTree = "<group>"; };
+		A8263331260F7C31009AA6D0 /* DepartmentProductsRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentProductsRequestTests.swift; sourceTree = "<group>"; };
 		A8646C44260DEE9C00604FE0 /* stellamc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stellamc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8646C47260DEE9C00604FE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8646C49260DEE9C00604FE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -514,17 +518,19 @@
 		A8646E0E260E71B700604FE0 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				A8646E0F260E71C800604FE0 /* Department Response */,
+				A8263329260F7AC7009AA6D0 /* Json.swift */,
+				A8646E0F260E71C800604FE0 /* Department Products API */,
 			);
 			path = API;
 			sourceTree = "<group>";
 		};
-		A8646E0F260E71C800604FE0 /* Department Response */ = {
+		A8646E0F260E71C800604FE0 /* Department Products API */ = {
 			isa = PBXGroup;
 			children = (
+				A8263331260F7C31009AA6D0 /* DepartmentProductsRequestTests.swift */,
 				A8646E10260E71D100604FE0 /* jsons */,
 			);
-			path = "Department Response";
+			path = "Department Products API";
 			sourceTree = "<group>";
 		};
 		A8646E10260E71D100604FE0 /* jsons */ = {
@@ -644,6 +650,7 @@
 					};
 					A8646C59260DEE9E00604FE0 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 						TestTargetID = A8646C43260DEE9C00604FE0;
 					};
 					A8646C64260DEE9E00604FE0 = {
@@ -851,6 +858,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A826332A260F7AC7009AA6D0 /* Json.swift in Sources */,
+				A8263332260F7C31009AA6D0 /* DepartmentProductsRequestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1063,6 +1072,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = stellamcTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
@@ -1073,6 +1083,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = npasini.stellamcTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/stellamc.app/stellamc";
@@ -1085,6 +1096,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = stellamcTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
