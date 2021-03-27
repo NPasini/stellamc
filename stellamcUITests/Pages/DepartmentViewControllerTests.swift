@@ -29,7 +29,7 @@ class DepartmentViewControllerTests: XCTestCase {
 
         let tableView = app.tables["productsTableView"]
         XCTAssertTrue(tableView.exists)
-        XCTAssertEqual(tableView.cells.count, 25)
+        XCTAssertEqual(tableView.cells.count, 30)
 
         let messageView = app.otherElements["messageView"]
         XCTAssertFalse(messageView.exists)
@@ -39,8 +39,8 @@ class DepartmentViewControllerTests: XCTestCase {
 
         for index in 0..<tableView.cells.count {
             let cell = app.cells["DataCell\(index)"].firstMatch
-            let text = cell.staticTexts.element(matching:.any, identifier: "gazerName")
-            XCTAssertEqual(text.label, "Test\(index + 1)")
+            let text = cell.staticTexts.element(matching:.any, identifier: "productName")
+            XCTAssertEqual(text.label, "Name \(index + 1)")
         }
     }
 
@@ -59,8 +59,8 @@ class DepartmentViewControllerTests: XCTestCase {
 
         for index in 0..<tableView.cells.count {
             let cell = app.cells["DataCell\(index)"].firstMatch
-            let text = cell.staticTexts.element(matching:.any, identifier: "gazerName")
-            XCTAssertEqual(text.label, "Test\(index + 1)")
+            let text = cell.staticTexts.element(matching:.any, identifier: "productName")
+            XCTAssertEqual(text.label, "Name \(index + 1)")
         }
     }
 }
