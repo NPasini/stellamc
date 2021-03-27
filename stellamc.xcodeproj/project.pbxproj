@@ -13,6 +13,15 @@
 		A8263332260F7C31009AA6D0 /* DepartmentProductsRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8263331260F7C31009AA6D0 /* DepartmentProductsRequestTests.swift */; };
 		A826333D260F80E1009AA6D0 /* DepartmentProductsResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A826333C260F80E1009AA6D0 /* DepartmentProductsResponseTests.swift */; };
 		A8263345260F8204009AA6D0 /* productsNoIds.json in Resources */ = {isa = PBXBuildFile; fileRef = A8263344260F8204009AA6D0 /* productsNoIds.json */; };
+		A826334F260F839F009AA6D0 /* DepartmentViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A826334E260F839F009AA6D0 /* DepartmentViewControllerTests.swift */; };
+		A8263359260F847F009AA6D0 /* AppServicesWithAvailableNetworkAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8263358260F847F009AA6D0 /* AppServicesWithAvailableNetworkAssembly.swift */; };
+		A826335E260F84A8009AA6D0 /* AppServicesWithNotAvailableNetworkAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A826335D260F84A8009AA6D0 /* AppServicesWithNotAvailableNetworkAssembly.swift */; };
+		A8263365260F84D5009AA6D0 /* EmptyTestDepartmentProductsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8263364260F84D5009AA6D0 /* EmptyTestDepartmentProductsRepository.swift */; };
+		A826336E260F8519009AA6D0 /* TestDepartmentProductsRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A826336D260F8519009AA6D0 /* TestDepartmentProductsRepositoryTests.swift */; };
+		A8263377260F8555009AA6D0 /* AvailableNetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8263376260F8555009AA6D0 /* AvailableNetworkMonitor.swift */; };
+		A826337C260F856C009AA6D0 /* NotAvailableNetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A826337B260F856C009AA6D0 /* NotAvailableNetworkMonitor.swift */; };
+		A8263381260F858D009AA6D0 /* TestNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8263380260F858D009AA6D0 /* TestNavigation.swift */; };
+		A8263389260F85D6009AA6D0 /* MockedProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8263388260F85D6009AA6D0 /* MockedProducts.swift */; };
 		A8646C48260DEE9C00604FE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8646C47260DEE9C00604FE0 /* AppDelegate.swift */; };
 		A8646C4A260DEE9C00604FE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8646C49260DEE9C00604FE0 /* SceneDelegate.swift */; };
 		A8646C4F260DEE9C00604FE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8646C4D260DEE9C00604FE0 /* Main.storyboard */; };
@@ -102,6 +111,15 @@
 		A8263331260F7C31009AA6D0 /* DepartmentProductsRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentProductsRequestTests.swift; sourceTree = "<group>"; };
 		A826333C260F80E1009AA6D0 /* DepartmentProductsResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentProductsResponseTests.swift; sourceTree = "<group>"; };
 		A8263344260F8204009AA6D0 /* productsNoIds.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = productsNoIds.json; sourceTree = "<group>"; };
+		A826334E260F839F009AA6D0 /* DepartmentViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentViewControllerTests.swift; sourceTree = "<group>"; };
+		A8263358260F847F009AA6D0 /* AppServicesWithAvailableNetworkAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppServicesWithAvailableNetworkAssembly.swift; sourceTree = "<group>"; };
+		A826335D260F84A8009AA6D0 /* AppServicesWithNotAvailableNetworkAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppServicesWithNotAvailableNetworkAssembly.swift; sourceTree = "<group>"; };
+		A8263364260F84D5009AA6D0 /* EmptyTestDepartmentProductsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTestDepartmentProductsRepository.swift; sourceTree = "<group>"; };
+		A826336D260F8519009AA6D0 /* TestDepartmentProductsRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDepartmentProductsRepositoryTests.swift; sourceTree = "<group>"; };
+		A8263376260F8555009AA6D0 /* AvailableNetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableNetworkMonitor.swift; sourceTree = "<group>"; };
+		A826337B260F856C009AA6D0 /* NotAvailableNetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotAvailableNetworkMonitor.swift; sourceTree = "<group>"; };
+		A8263380260F858D009AA6D0 /* TestNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNavigation.swift; sourceTree = "<group>"; };
+		A8263388260F85D6009AA6D0 /* MockedProducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedProducts.swift; sourceTree = "<group>"; };
 		A8646C44260DEE9C00604FE0 /* stellamc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stellamc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8646C47260DEE9C00604FE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8646C49260DEE9C00604FE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -218,6 +236,69 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		A826334C260F826A009AA6D0 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				A826334D260F837D009AA6D0 /* Department Page */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		A826334D260F837D009AA6D0 /* Department Page */ = {
+			isa = PBXGroup;
+			children = (
+				A826334E260F839F009AA6D0 /* DepartmentViewControllerTests.swift */,
+				A8263388260F85D6009AA6D0 /* MockedProducts.swift */,
+			);
+			path = "Department Page";
+			sourceTree = "<group>";
+		};
+		A8263356260F8457009AA6D0 /* Dependency Injection */ = {
+			isa = PBXGroup;
+			children = (
+				A8263357260F8474009AA6D0 /* Assemblies */,
+				A8263362260F84C5009AA6D0 /* Components */,
+			);
+			path = "Dependency Injection";
+			sourceTree = "<group>";
+		};
+		A8263357260F8474009AA6D0 /* Assemblies */ = {
+			isa = PBXGroup;
+			children = (
+				A8263358260F847F009AA6D0 /* AppServicesWithAvailableNetworkAssembly.swift */,
+				A826335D260F84A8009AA6D0 /* AppServicesWithNotAvailableNetworkAssembly.swift */,
+			);
+			path = Assemblies;
+			sourceTree = "<group>";
+		};
+		A8263362260F84C5009AA6D0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A8263363260F84CC009AA6D0 /* Repositories */,
+				A8263375260F854A009AA6D0 /* Services */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A8263363260F84CC009AA6D0 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				A8263364260F84D5009AA6D0 /* EmptyTestDepartmentProductsRepository.swift */,
+				A826336D260F8519009AA6D0 /* TestDepartmentProductsRepositoryTests.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		A8263375260F854A009AA6D0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A8263376260F8555009AA6D0 /* AvailableNetworkMonitor.swift */,
+				A826337B260F856C009AA6D0 /* NotAvailableNetworkMonitor.swift */,
+				A8263380260F858D009AA6D0 /* TestNavigation.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		A8646C3B260DEE9C00604FE0 = {
 			isa = PBXGroup;
 			children = (
@@ -263,8 +344,10 @@
 		A8646C5D260DEE9E00604FE0 /* stellamcTests */ = {
 			isa = PBXGroup;
 			children = (
-				A8646E0E260E71B700604FE0 /* API */,
 				A8646C60260DEE9E00604FE0 /* Info.plist */,
+				A8646E0E260E71B700604FE0 /* API */,
+				A8263356260F8457009AA6D0 /* Dependency Injection */,
+				A826334C260F826A009AA6D0 /* Pages */,
 			);
 			path = stellamcTests;
 			sourceTree = "<group>";
@@ -865,8 +948,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8263381260F858D009AA6D0 /* TestNavigation.swift in Sources */,
+				A826335E260F84A8009AA6D0 /* AppServicesWithNotAvailableNetworkAssembly.swift in Sources */,
+				A826336E260F8519009AA6D0 /* TestDepartmentProductsRepositoryTests.swift in Sources */,
+				A8263377260F8555009AA6D0 /* AvailableNetworkMonitor.swift in Sources */,
+				A8263365260F84D5009AA6D0 /* EmptyTestDepartmentProductsRepository.swift in Sources */,
+				A826334F260F839F009AA6D0 /* DepartmentViewControllerTests.swift in Sources */,
+				A8263389260F85D6009AA6D0 /* MockedProducts.swift in Sources */,
 				A826332A260F7AC7009AA6D0 /* Json.swift in Sources */,
 				A826333D260F80E1009AA6D0 /* DepartmentProductsResponseTests.swift in Sources */,
+				A8263359260F847F009AA6D0 /* AppServicesWithAvailableNetworkAssembly.swift in Sources */,
+				A826337C260F856C009AA6D0 /* NotAvailableNetworkMonitor.swift in Sources */,
 				A8263332260F7C31009AA6D0 /* DepartmentProductsRequestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
