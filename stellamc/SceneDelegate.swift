@@ -26,7 +26,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
             // Check if UITesting are running
             if UserDefaults.standard.bool(forKey: "UITesting") {
-//                createViewControllerForTesting(using: navigationService, presenter: presenter)
+                createViewControllerForTesting(using: navigationService, presenter: presenter)
             } else {
                 let viewModel = DepartmentSelectorViewModel()
                 navigationService?.push(page: .departmentSelector, with: viewModel, using: presenter, animated: false)

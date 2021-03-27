@@ -7,27 +7,24 @@
 
 import UIKit
 
-//extension SceneDelegate {
-//    func createViewControllerForTesting(using navigationService: NavigationService?, presenter: UINavigationController) {
-//
-//        var page: Page?
-//        var viewModel: ViewModel?
-//
-//        guard let testPage = ProcessInfo.processInfo.environment["testPage"] else { return }
-//
-//        switch testPage {
-//        case "starGazerList":
-//            page = .starGazerList
-//            viewModel = StarGazersListViewModel(repositoryName: "test-name", repositoryOwner: "test-owner")
-//        case "repositorySelector":
-//            page = .repositorySelector
-//            viewModel = RepositorySelectorViewModel()
-//        default: ()
-//        }
-//
-//        if let selectedPage = page, let navigation = navigationService {
-//            navigation.push(page: selectedPage, with: viewModel, using: presenter, animated: false)
-//        }
-//    }
-//}
-//
+extension SceneDelegate {
+    func createViewControllerForTesting(using navigationService: NavigationService?, presenter: UINavigationController) {
+
+        var page: Page?
+        var viewModel: ViewModel?
+
+        guard let testPage = ProcessInfo.processInfo.environment["testPage"] else { return }
+
+        switch testPage {
+        case "department":
+            page = .department
+            viewModel = DepartmentViewModel(department: .beauty, itemsPerPage: 15)
+        default: ()
+        }
+
+        if let selectedPage = page, let navigation = navigationService {
+            navigation.push(page: selectedPage, with: viewModel, using: presenter, animated: false)
+        }
+    }
+}
+

@@ -38,11 +38,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var assemblies: [Assembly] = []
 
         if UserDefaults.standard.bool(forKey: "UITesting") {
-//            if UserDefaults.standard.bool(forKey: "networkNotAvailable") {
-//                assemblies.append(MockedServicesWithNotAvailableNetworkAssembly())
-//            } else {
-//                assemblies.append(MockedServicesWithAvailableNetworkAssembly())
-//            }
+            if UserDefaults.standard.bool(forKey: "networkNotAvailable") {
+                assemblies.append(MockedServicesWithNotAvailableNetworkAssembly())
+            } else {
+                assemblies.append(MockedServicesWithAvailableNetworkAssembly())
+            }
         } else {
             assemblies.append(AppServicesAssembly())
             assemblies.append(RepositoriesAssembly())
