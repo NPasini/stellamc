@@ -32,10 +32,10 @@ class DepartmentProductTableViewCell: UITableViewCell {
     }
 
     func configure(with product: Product) {
-        price.text = "\(product.price) €"
-        productName.text = product.name
+        productName.text = product.name.lowercased().capitalizingFirstLetter()
+        price.text = String(format: "%.2f", round(product.price*100)/100) + " €"
 
-        if let imageURL = URL(string: product.thumbURLString) {
+        if let imageURL = product.thumbURLString {
             productImage.sd_setImage(with: imageURL) { [weak self] (image: UIImage?, error: Error?, cacheType: SDImageCacheType, imageURL: URL?) in
                 guard error == nil else { return }
 
