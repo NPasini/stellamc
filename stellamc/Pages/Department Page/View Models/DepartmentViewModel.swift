@@ -17,7 +17,7 @@ final class DepartmentViewModel: ViewModel {
 
     private var currentPage: Int
     private var isFetching: Bool
-    private let itemsPerPage: Int = 50
+    private let itemsPerPage: Int
     private let serialDisposable: SerialDisposable
     private let stopFetchingPipe: (output: BoolSignal, input: BoolSignal.Observer)
     private let departmentProductsRepository: DepartmentProductsRepositoryService?
@@ -25,16 +25,17 @@ final class DepartmentViewModel: ViewModel {
 
     // MARK: - Lyfe Cycle
 
-    init(department: Department) {
+    init(department: Department, itemsPerPage: Int = 50) {
         currentPage = 1
         isFetching = false
+        self.itemsPerPage = itemsPerPage
         stopFetchingPipe = BoolSignal.pipe()
         errorSignalPipe = StringSignal.pipe()
         productsDataSource = MutableProperty([])
         serialDisposable = SerialDisposable(nil)
         errorSignal = Property(initial: "", then: errorSignalPipe.output)
         stopFetchingData = Property(initial: false, then: stopFetchingPipe.output)
-        departmentProductsRepository = AssemblerWrapper.shared.resolve(DepartmentProductsRepositoryService.self, argument: department)
+        departmentProductsRepository = AssemblerWrapper.shared.resolve(DepartmentProductsRepositoryService.self, arguments: department, itemsPerPage)
     }
 
     deinit {
