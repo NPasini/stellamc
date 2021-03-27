@@ -101,7 +101,7 @@ class DepartmentViewController: BaseViewController {
             OSLogger.uiLog(message: "Reloading TableView", access: .public, type: .debug)
             if gazers.count == 0, let isConnectionAvailable = self?.isNetworkConnectionAvailable, isConnectionAvailable {
                 DispatchQueue.main.async {
-                    self?.showAlert(title: "No Gazers", message: "There are no products for this department")
+                    self?.showAlert(title: "No Products", message: "There are no products for this department")
                 }
             }
         })

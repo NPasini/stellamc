@@ -23,12 +23,12 @@
 		A8263381260F858D009AA6D0 /* TestNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8263380260F858D009AA6D0 /* TestNavigation.swift */; };
 		A8263389260F85D6009AA6D0 /* MockedProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8263388260F85D6009AA6D0 /* MockedProducts.swift */; };
 		A8263394260F8BAD009AA6D0 /* DepartmentViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8263393260F8BAD009AA6D0 /* DepartmentViewModelTests.swift */; };
+		A826339D260F8D42009AA6D0 /* DepartmentViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A826339C260F8D42009AA6D0 /* DepartmentViewControllerTests.swift */; };
 		A8646C48260DEE9C00604FE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8646C47260DEE9C00604FE0 /* AppDelegate.swift */; };
 		A8646C4A260DEE9C00604FE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8646C49260DEE9C00604FE0 /* SceneDelegate.swift */; };
 		A8646C4F260DEE9C00604FE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8646C4D260DEE9C00604FE0 /* Main.storyboard */; };
 		A8646C51260DEE9D00604FE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8646C50260DEE9D00604FE0 /* Assets.xcassets */; };
 		A8646C54260DEE9D00604FE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8646C52260DEE9D00604FE0 /* LaunchScreen.storyboard */; };
-		A8646C6A260DEE9E00604FE0 /* stellamcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8646C69260DEE9E00604FE0 /* stellamcUITests.swift */; };
 		A8646C7F260DF0BA00604FE0 /* NetworkManager in Frameworks */ = {isa = PBXBuildFile; productRef = A8646C7E260DF0BA00604FE0 /* NetworkManager */; };
 		A8646C82260DF0C200604FE0 /* OSLogger in Frameworks */ = {isa = PBXBuildFile; productRef = A8646C81260DF0C200604FE0 /* OSLogger */; };
 		A8646C85260DF0DB00604FE0 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = A8646C84260DF0DB00604FE0 /* Swinject */; };
@@ -122,6 +122,7 @@
 		A8263380260F858D009AA6D0 /* TestNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNavigation.swift; sourceTree = "<group>"; };
 		A8263388260F85D6009AA6D0 /* MockedProducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedProducts.swift; sourceTree = "<group>"; };
 		A8263393260F8BAD009AA6D0 /* DepartmentViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentViewModelTests.swift; sourceTree = "<group>"; };
+		A826339C260F8D42009AA6D0 /* DepartmentViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentViewControllerTests.swift; sourceTree = "<group>"; };
 		A8646C44260DEE9C00604FE0 /* stellamc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stellamc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8646C47260DEE9C00604FE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8646C49260DEE9C00604FE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,7 +133,6 @@
 		A8646C5A260DEE9E00604FE0 /* stellamcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = stellamcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8646C60260DEE9E00604FE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8646C65260DEE9E00604FE0 /* stellamcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = stellamcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A8646C69260DEE9E00604FE0 /* stellamcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stellamcUITests.swift; sourceTree = "<group>"; };
 		A8646C6B260DEE9E00604FE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8646C96260DF1A000604FE0 /* AssemblerWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblerWrapper.swift; sourceTree = "<group>"; };
 		A8646CA0260DF1EB00604FE0 /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
@@ -302,6 +302,21 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		A826339B260F8D20009AA6D0 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				A826339C260F8D42009AA6D0 /* DepartmentViewControllerTests.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		A82633A4260F8E87009AA6D0 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		A8646C3B260DEE9C00604FE0 = {
 			isa = PBXGroup;
 			children = (
@@ -336,6 +351,7 @@
 				A8646C95260DF19100604FE0 /* Dependency Injection */,
 				A8646C52260DEE9D00604FE0 /* LaunchScreen.storyboard */,
 				A8646C4D260DEE9C00604FE0 /* Main.storyboard */,
+				A82633A4260F8E87009AA6D0 /* Mocks */,
 				A8646D32260DFAD800604FE0 /* Models */,
 				A8646C9D260DF1C000604FE0 /* Pages */,
 				A8646C9E260DF1D000604FE0 /* Services */,
@@ -358,8 +374,8 @@
 		A8646C68260DEE9E00604FE0 /* stellamcUITests */ = {
 			isa = PBXGroup;
 			children = (
-				A8646C69260DEE9E00604FE0 /* stellamcUITests.swift */,
 				A8646C6B260DEE9E00604FE0 /* Info.plist */,
+				A826339B260F8D20009AA6D0 /* Pages */,
 			);
 			path = stellamcUITests;
 			sourceTree = "<group>";
@@ -747,6 +763,7 @@
 					};
 					A8646C64260DEE9E00604FE0 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 						TestTargetID = A8646C43260DEE9C00604FE0;
 					};
 				};
@@ -971,7 +988,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8646C6A260DEE9E00604FE0 /* stellamcUITests.swift in Sources */,
+				A826339D260F8D42009AA6D0 /* DepartmentViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1222,6 +1239,7 @@
 			baseConfigurationReference = 8C872FDA7A5830C40869E7DE /* Pods-stellamc-stellamcUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = stellamcUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1231,6 +1249,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = npasini.stellamcUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = stellamc;
@@ -1242,6 +1261,7 @@
 			baseConfigurationReference = 41C38EB0C91A1EDC4251402B /* Pods-stellamc-stellamcUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = stellamcUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
