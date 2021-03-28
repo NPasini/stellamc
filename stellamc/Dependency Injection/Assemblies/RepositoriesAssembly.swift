@@ -18,5 +18,9 @@ class RepositoriesAssembly: Assembly {
         container.register(DepartmentProductsRepositoryService.self) { _, department, perPageItems in
             return DepartmentProductsRepository(department: department, perPageItems: perPageItems)
         }
+
+        container.register(ProductDetailsRepositoryService.self) { _ in
+            return ProductDetailsRepository()
+        }
     }
 }
