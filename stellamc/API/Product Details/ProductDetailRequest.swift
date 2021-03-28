@@ -1,15 +1,15 @@
 //
-//  DepartmentProductsRequest.swift
+//  ProductDetailRequest.swift
 //  stellamc
 //
-//  Created by Nicolò Pasini on 26/03/21.
+//  Created by Nicolò Pasini on 28/03/21.
 //
 
 import OSLogger
 import Foundation
 import NetworkManager
 
-class DepartmentProductsRequest: GetRequest<DepartmentProductsResponse> {
+class ProductDetailRequest: GetRequest<ProductDetailResponse> {
     let aveKey: String = "ave"
     let pageKey: String = "page"
     let genderKey: String = "gender"
@@ -18,17 +18,11 @@ class DepartmentProductsRequest: GetRequest<DepartmentProductsResponse> {
     let deparmentKey: String = "department"
     let perPageKey: String = "productsPerPage"
 
-    init(department: String, gender: String? = nil, page: Int, perPageItems: Int) {
+    init(productCode: String) {
         let host = Hosts.yoox.rawValue
-        let path = "Search.API/1.3/SMC_IT/search/results.json"
+        let path = "Item.API/1.0/SMC_IT/item/\(productCode).json"
 
-        var queryParameters: [String : CustomStringConvertible] = [aveKey: "prod", perPageKey: perPageItems, pageKey: page, formatKey: "lite", sortRuleKey: "Ranking", deparmentKey: department]
-
-        if let choosenGender = gender {
-            queryParameters[genderKey] = choosenGender
-        }
-
-        super.init(host: host, path: path, isHttp: true, queryParameters: queryParameters)
+        super.init(host: host, path: path)
     }
 
     override func validateResponse(_ response: URLResponse) -> NSError? {
