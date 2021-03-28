@@ -8,10 +8,12 @@
 import Foundation
 
 struct Product: Decodable {
+    
     enum CodingKeys: String, CodingKey {
         case price = "FullPrice"
         case name = "ModelNames"
         case id = "DefaultCode10"
+        case productCode = "Code8"
         case microCategory = "MicroCategory"
         case macroCategory = "MacroCategory"
     }
@@ -19,15 +21,18 @@ struct Product: Decodable {
     let id: String
     let name: String
     let price: Double
+    let productCode: String
     let thumbURLString: URL?
     let pdpImagesURLs: [URL]
     let microCategory: String?
     let macroCategory: String?
+    private(set) var details: ProductDetails?
 
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
 
         id = try container.decode(String.self, forKey: .id)
+        productCode = try container.decode(String.self, forKey: .productCode)
         price = try container.decodeIfPresent(Double.self, forKey: .price) ?? 0
         let productName = try container.decodeIfPresent(String.self, forKey: .name)
         microCategory = try container.decodeIfPresent(String.self, forKey: .microCategory)
@@ -43,19 +48,24 @@ struct Product: Decodable {
         pdpImagesURLs = pdpImagesURLStrings.compactMap({ URL(string: $0) })
     }
 
-    init(id: String, price: Double, name: String, microCategory: String?, macroCategory: String?, thumbURLString: URL?, pdpImagesURLStrings: [URL]) {
+    init(id: String, productCode: String, price: Double, name: String, microCategory: String?, macroCategory: String?, thumbURLString: URL?, pdpImagesURLStrings: [URL]) {
         self.id = id
         self.name = name
         self.price = price
+        self.productCode = productCode
         self.microCategory = microCategory
         self.macroCategory = macroCategory
         self.thumbURLString = thumbURLString
         self.pdpImagesURLs = pdpImagesURLStrings
     }
+
+    mutating func setDetails(_ details: ProductDetails?) {
+        self.details = details
+    }
 }
 
 extension Product: Equatable {
     static func ==(lhs: Product, rhs: Product) -> Bool {
-        return true
+        return lhs.id == rhs.id
     }
 }
