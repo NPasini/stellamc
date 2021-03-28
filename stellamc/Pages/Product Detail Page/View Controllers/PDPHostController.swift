@@ -17,8 +17,8 @@ final class PDPHostController: UIHostingController<AnyView> {
         fatalError("Wrong initialization of PDPViewController")
     }
 
-    init(product: Product) {
-        let productView: some View = ProductView(product: product)
+    init(viewModel: PDPViewModel) {
+        let productView: some View = ProductView(viewModel: viewModel)
         super.init(rootView: AnyView(productView))
     }
 }

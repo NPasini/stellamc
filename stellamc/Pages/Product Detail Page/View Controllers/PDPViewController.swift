@@ -32,7 +32,7 @@ class PDPViewController: BaseViewController {
     }
 
     private func insertHostedViewController() {
-        let childViewController = PDPHostController(product:  pdpViewModel.product)
+        let childViewController = PDPHostController(viewModel: pdpViewModel)
 
         childViewController.view.translatesAutoresizingMaskIntoConstraints = false
 
